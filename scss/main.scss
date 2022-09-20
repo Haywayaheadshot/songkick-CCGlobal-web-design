@@ -1,0 +1,1013 @@
+@import "_var";
+
+body {
+  margin: 0;
+}
+
+.margin {
+  margin: 0;
+}
+
+.padding {
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.font {
+  font-family: $font-family;
+  font-style: $font-style;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.for-desktop {
+  display: none;
+}
+
+.for-phone {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -moz-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+}
+
+// Home Page Start
+
+// Header
+
+.header {
+  background-color: $dark-grey;
+  // height: auto;
+  .page-header {
+    width: 100%;
+    .nav-bar {
+      // mix-blend-mode: multiply;
+      // backdrop-filter: blur(40px);
+      height: inherit;
+      padding: 15px 0 0 20px;
+
+      .hamburger {
+        width: 50px;
+      }
+    }
+  }
+
+  .page-header-body {
+    padding: 0 20px 0 20px;
+    padding-bottom: 10px;
+
+    .header-text-head {
+      font-weight: $font-weight - 405;
+      line-height: 20px;
+      color: $orange;
+      padding-top: 30px;
+    }
+
+    .header-text-body {
+      font-weight: $font-weight;
+      background-image: linear-gradient(360deg, $orange, $dark-orange);
+      background-clip: text;
+      color: transparent;
+      margin-top: -15px;
+      font-size: 30px;
+    }
+
+    .header-text-description-container {
+      background-color: $white;
+      height: 30px;
+      padding: 3px;
+      height: fit-content;
+
+      .header-text-description {
+        background-color: $dark-grey;
+        margin: 0;
+        padding: 10px 30px 10px 20px;
+        height: fit-content;
+        color: $light-black;
+        font-size: 15px;
+        font-weight: $font-weight - 500;
+        line-height: 12px;
+        // display: flex;
+        // justify-content: center;
+      }
+    }
+
+    .find-concert {
+      background-image: linear-gradient(360deg, $orange, $dark-orange);
+      padding: 10px;
+      color: $white;
+      width: fit-content;
+      border-radius: 20px;
+      font-weight: $font-weight - 500;
+      margin-left: 30px;
+      display: flex;
+      border: 0;
+      margin-top: 10px;
+
+      .enter-arrow {
+        width: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.musical-note-1 {
+  display: inline;
+  position: relative;
+  top: 40px;
+  left: 30px;
+}
+
+.musical-note-2 {
+  display: inline;
+  // position: relative;
+  // top: -430px;
+  // left: 190px;
+}
+
+.musical-note-3 {
+  display: inline;
+  // position: relative;
+  // top: -400px;
+  // left: 280px;
+}
+
+.musical-note-4 {
+  display: flex;
+  position: relative;
+  top: -280px;
+  left: 280px;
+}
+
+.musical-note-5 {
+  display: flex;
+  position: relative;
+  top: -180px;
+  left: 280px;
+}
+
+.musical-note-6 {
+  display: flex;
+  position: relative;
+  top: -210px;
+  left: 0;
+}
+
+// Main
+
+.main {
+  margin: 0;
+  background-color: $black;
+  padding: 20px 5px 30px 5px;
+
+  .main-head {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-weight: $font-weight - 500;
+  }
+
+  .red-line {
+    color: $orange;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .trending-songs-container {
+    padding: 20px 8px 10px 8px;
+    display: grid;
+    gap: 15px;
+
+    .trending-songs-item {
+      padding: 10px 8px 15px 8px;
+      background-color: $darkest-grey;
+      display: flex;
+
+      .headphones {
+        padding: 20px 15px 20px 15px;
+        width: 80px;
+        height: auto;
+      }
+
+      .number {
+        padding: 0 0 0 8px;
+        color: $orange;
+        font-weight: $font-weight - 500;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }
+
+      .song-info-div {
+        height: fit-content;
+        width: 50%;
+        // margin-top: 26px;
+      }
+
+      .song-info {
+        color: $white;
+        font-weight: $font-weight - 600;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .trending-songs-button-div {
+    display: flex;
+    justify-content: center;
+    .trending-songs-button {
+      background-color: $orange;
+      border: 0;
+      height: 80px;
+      color: $white;
+      margin: 30px 0 0 0;
+      width: fit-content;
+      padding: 0 50px;
+      font-weight: $font-weight - 400;
+      font-size: 15px;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $white;
+  padding: 20px 10px 50px 10px;
+  .footer-head {
+    display: flex;
+    justify-content: center;
+    font-weight: $font-weight - 350;
+  }
+
+  .red-line-2 {
+    display: flex;
+    justify-content: center;
+    color: $orange;
+    padding-bottom: 40px;
+    margin-top: -25px;
+    font-size: 10px;
+  }
+
+  .featured-artists-container {
+    display: grid;
+    gap: 2px;
+  }
+
+  .featured-artists-item-div {
+    display: flex;
+    padding: 20px;
+
+    .background-top {
+      height: 50px;
+    }
+
+    .featured-artists-image {
+      height: 120px;
+      margin-top: 14px;
+      margin-left: -38px;
+    }
+
+    .featured-artists-body-div {
+      padding: 0 20px;
+
+      h4 {
+        margin: 0;
+        color: $black;
+        font-weight: $font-weight - 300;
+      }
+
+      h5 {
+        margin-top: 10px;
+        color: $orange;
+        font-weight: $font-weight - 500;
+      }
+
+      div {
+        margin-top: -30px;
+        color: $grey;
+      }
+
+      h6 {
+        color: $light-black;
+      }
+    }
+  }
+
+  button {
+    background-color: $white;
+    width: 100%;
+    border: 1px solid $grey;
+    color: $black;
+    font-weight: $font-weight - 500;
+    padding: 13px 0;
+
+    span {
+      padding: 0 5px;
+      color: $orange;
+      font-weight: $font-weight - 200;
+    }
+  }
+}
+
+// Homepage Phone-version End
+
+// Homepage Desktop-version End
+
+// About Phone-version Page Start
+
+.about-header {
+  background-color: $dark-grey;
+  padding: 0 20px;
+
+  .about-page-header {
+    .about-nav-bar {
+      padding: 20px 0 0 5px;
+
+      .about-hamburger {
+        width: 50px;
+      }
+    }
+  }
+
+  .about-page-header-body {
+    .about-header-text-div {
+      display: grid;
+
+      .about-header-text-head {
+        display: flex;
+        justify-content: center;
+        color: $orange;
+        font-weight: $font-weight - 405px;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .about-header-text-body {
+        display: flex;
+        justify-content: center;
+        font-weight: $font-weight;
+        color: $orange;
+        font-size: 35px;
+        margin: 0;
+        padding: 0 0 60px 25px;
+        text-align: center;
+      }
+    }
+
+    .about-header-text-description-container {
+      border: 1px solid $grey;
+      display: flex;
+      justify-content: center;
+      background-color: $white;
+
+      .about-header-text-description {
+        padding: 10px 30px 10px 20px;
+        color: $light-black;
+        font-size: 15px;
+        font-weight: $font-weight - 500;
+        line-height: 12px;
+        font-display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    .contact-paragraph-div {
+      padding: 0 70px;
+      display: flex;
+      justify-content: center;
+
+      .contact-paragraph {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        color: $light-black;
+        text-align: center;
+        line-height: 25px;
+        font-weight: $font-weight - 350;
+      }
+    }
+
+    .email-link-div {
+      display: flex;
+      justify-content: center;
+      margin-top: -25px;
+      padding-bottom: 40px;
+      .email-link {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        color: $light-black;
+        text-align: center;
+        line-height: 25px;
+        font-weight: $font-weight - 350;
+      }
+    }
+  }
+}
+
+.about-main-header {
+  padding: 20px;
+  h1 {
+    text-align: center;
+    font-weight: $font-weight - 400;
+    color: $black;
+  }
+
+  .about-header-red-line {
+    color: $orange;
+    text-align: center;
+    margin-top: -25px;
+    font-weight: $font-weight;
+  }
+}
+
+.last-concert-header {
+  text-align: center;
+  margin-top: -10px;
+  color: $light-black;
+  font-size: 15px;
+  padding: 0 40px;
+}
+
+.last-concert-container {
+  display: grid;
+  gap: 50px;
+  padding: 30px;
+
+  .last-concert-item:nth-child(1),
+  .last-concert-item:nth-child(2) {
+    height: 300px;
+    width: 100%;
+    // position: relative;
+  }
+
+  .last-concert-item:nth-child(1) {
+    height: 300px;
+    width: 100%;
+
+    .concert-year-location {
+      background-color: $orange;
+      height: 300px;
+      color: $white;
+      padding: 0;
+      margin-bottom: -300px;
+      mix-blend-mode: multiply;
+    }
+
+    .concert-images-1 {
+      width: inherit;
+      height: inherit;
+      display: flex;
+    }
+  }
+
+  .last-concert-item:nth-child(2) {
+    height: 300px;
+    width: 100%;
+
+    .concert-year-location-2 {
+      background-color: $orange;
+      height: 300px;
+      margin-bottom: -15px;
+      padding: 0;
+      mix-blend-mode: multiply;
+    }
+
+    .concert-images-2 {
+      width: inherit;
+      height: inherit;
+      margin-top: -300px;
+    }
+  }
+}
+
+.contact-year-text {
+  margin-top: -190px;
+  width: 100%;
+}
+
+.contact-year-text-head {
+  color: $white;
+  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+  padding: 0 40px;
+  font-weight: $font-weight - 500;
+}
+
+.contact-year-text-info {
+  position: relative;
+  color: $white;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 50px;
+  font-weight: $font-weight - 600;
+}
+
+.partners {
+  background-image: linear-gradient(250deg, $black, $light-black);
+
+  .partner-head {
+    text-align: center;
+    color: $white;
+    padding-top: 40px;
+    font-weight: $font-weight - 400;
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  .partner-head-red-line {
+    color: $orange;
+    text-align: center;
+    margin-top: -25px;
+    font-weight: $font-weight - 600;
+  }
+
+  .partners-logo-ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 40px 40px;
+    .partner-logo {
+      max-width: 80px;
+      height: auto;
+    }
+  }
+}
+
+.footer-end {
+  display: flex;
+  flex-direction: row;
+
+  .footer-end-items {
+    width: 50%;
+    padding: 40px;
+
+    .footer-end-items-logo {
+      font-weight: $font-weight -200;
+      line-height: 30px;
+      color: $black;
+    }
+
+    .footer-end-items-rights {
+      font-weight: $font-weight - 500;
+      font-size: 15px;
+      color: $light-black;
+    }
+  }
+}
+
+// Hamburger Pop Style
+
+.hamburger-pop-up {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  mix-blend-mode: multiply;
+  display: none;
+  margin-left: -20px;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+}
+
+.power-button {
+  background-color: $white;
+  border: 0;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.power-button-image {
+  height: 50px;
+  width: auto;
+}
+
+.pop-up-ul {
+  padding: 30px 60px;
+  display: grid;
+  gap: 20px;
+}
+
+.pop-up-ul-text {
+  color: $black;
+  font-weight: $font-weight - 300;
+  font-size: 20px;
+}
+
+// Desktop Versions
+
+@media (min-width: 768px) {
+  // Homepage Desktop-version Start
+
+  .for-phone {
+    display: none;
+  }
+
+  .for-desktop {
+    display: block;
+  }
+
+  .for-desktop-nav-bar-div {
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -5px;
+    position: fixed;
+    top: 2px;
+    left: 20px;
+  }
+
+  .long-black-nav {
+    height: 20px;
+    background-color: $black;
+    width: inherit;
+    padding: 10px 0;
+  }
+
+  .desktop-nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: -180px;
+
+    li {
+      padding: 0 10px;
+    }
+
+    button {
+      margin: 0;
+      color: $white;
+      background-color: inherit;
+      border: 0;
+    }
+  }
+
+  .nav-bar-icon-logo {
+    height: 15px;
+  }
+
+  .nav-bar-logo-div {
+    padding: 10px 60px;
+    background-color: $white;
+    margin: 5.5px 0 0 -50px;
+    display: flex;
+
+    ul {
+      display: flex;
+      width: 55%;
+      justify-content: center;
+      padding-left: 105px;
+
+      li {
+        padding: 0 30px;
+        margin-top: 12px;
+      }
+    }
+
+    button {
+      margin-left: -30px;
+      border: 5px solid $orange;
+      background-color: $white;
+      padding: 0 15px;
+      font-weight: $font-weight - 500;
+      color: $orange;
+    }
+  }
+
+  .logo {
+    padding: 10px;
+    width: 20%;
+    text-align: end;
+  }
+
+  .bottom-header-ul-li-text {
+    color: $light-black;
+    font-weight: $font-weight - 380;
+    font-size: 15px;
+  }
+
+  .header-logo {
+    font-size: 30px;
+    color: $orange;
+    font-weight: $font-weight - 500;
+    line-height: 20px;
+  }
+
+  .page-header-body {
+    display: grid;
+    margin-top: 170px;
+  }
+
+  .header-text-head-desk {
+    padding: 0 0 0 135px;
+    font-size: 40px;
+    margin-bottom: -35px;
+    color: $orange;
+    font-weight: $font-weight - 505;
+    line-height: 40px;
+  }
+
+  .header-text-body-desk {
+    padding: 0 0 0 135px;
+    font-size: 60px;
+    font-weight: $font-weight;
+    background-image: linear-gradient(360deg, $orange, $dark-orange);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .header-text-description-container-desk {
+    background-color: $white;
+    height: 30px;
+    padding: 3px;
+    height: fit-content;
+    margin-left: 135px;
+    width: 35%;
+    margin-top: -30px;
+
+    .header-text-description-desk {
+      background-color: $dark-grey;
+      margin: 0;
+      padding: 10px 30px 10px 20px;
+      height: fit-content;
+      color: $light-black;
+      font-size: 15px;
+      font-weight: $font-weight - 500;
+      line-height: 12px;
+    }
+  }
+
+  .find-concert-desk {
+    background-image: linear-gradient(360deg, $orange, $dark-orange);
+    padding: 20px;
+    color: $white;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: $font-weight - 500;
+    margin: 20px 0 20px 135px;
+    display: flex;
+    border: 0;
+
+    .enter-arrow-desk {
+      width: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  .main {
+    .trending-songs-container {
+      display: flex;
+      gap: 2px;
+      padding: 0 135px;
+
+      .trending-songs-item {
+        margin-top: 30px;
+        display: grid;
+        width: 20%;
+      }
+    }
+
+    .trending-songs-button-div-desk {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 40px;
+
+      .trending-songs-link {
+        color: $white;
+        text-decoration: underline;
+        font-weight: $font-weight - 550;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer-desk {
+    padding: 20px 0;
+
+    .footer-head-desk {
+      text-align: center;
+      font-size: 25px;
+      font-weight: $font-weight - 500;
+      color: $black;
+    }
+
+    .red-line-2-desk {
+      text-align: center;
+      color: $dark-orange;
+      font-size: 20px;
+      margin-top: -40px;
+    }
+
+    .desk-featured-artists-container {
+      padding: 40px 135px;
+      display: grid;
+      gap: 0;
+
+      .desk-featured-artists-item-div {
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+
+        .desk-featured-artist-item-child {
+          width: 50%;
+          display: grid;
+          grid-template-columns: auto auto auto;
+
+          .desk-featured-artists-body-div {
+            margin-left: -200px;
+
+            h6 {
+              font-weight: $font-weight - 500;
+              font-size: 12px;
+            }
+
+            h5 {
+              color: $orange;
+            }
+
+            div {
+              margin-bottom: 10px;
+              font-weight: $font-weight;
+              color: $grey;
+              font-size: 15px;
+            }
+
+            h6 {
+              font-weight: $font-weight - 200;
+              color: $light-black;
+              // font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .background-top-desk {
+      display: inline-block;
+    }
+
+    .featured-artists-image-desk {
+      height: 120px;
+      width: 120px;
+      margin-top: 14px;
+      margin-left: -188px;
+      margin-right: -130px;
+    }
+
+    .padding-left-right {
+      padding: 0 400px;
+    }
+  }
+
+  // About Page Desktop Version
+
+  .about-header-text-div-desk {
+    padding: 200px 300px 20px 300px;
+  }
+
+  .about-header-text-body-desk {
+    text-align: center;
+    color: $orange;
+    font-weight: $font-weight;
+    font-size: 40px;
+  }
+
+  .about-header-text-description-container-desk {
+    padding: 0 300px;
+  }
+
+  .about-header-text-description-desk {
+    padding: 30px 60px;
+    background-color: $white;
+    color: $light-black;
+    text-align: center;
+    font-weight: $font-weight - 500;
+    font-size: 15px;
+  }
+
+  .contact-paragraph {
+    text-align: center;
+    padding-top: 20px;
+    color: $light-black;
+    font-weight: $font-weight - 300;
+  }
+
+  .email-link-div-desk {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    padding-bottom: 90px;
+
+    a {
+      text-decoration: underline;
+      color: $light-black;
+      font-weight: $font-weight;
+    }
+  }
+
+  .last-concert-container {
+    display: flex;
+    gap: 10px;
+    padding: 0 300px 20px 300px;
+  }
+
+  .partners {
+    margin-top: 100px;
+  }
+
+  .footer-end {
+    display: flex;
+    padding: 40px 300px;
+    margin-bottom: -300px;
+  }
+
+  .footer-end-items-logo-desk {
+    color: $white;
+    font-weight: $font-weight - 400;
+    padding-right: 40px;
+  }
+
+  .footer-end-items-rights-desk {
+    color: $white;
+    margin-top: 25px;
+    font-weight: $font-weight - 500;
+    font-size: 12px;
+  }
+
+  // Buttons Effect
+
+  // First nav bar
+  // Facebook and Twitter Logo
+  // .bottom-header-ul-li-text:hover {
+  //   background: #6070ff;
+  //   background-color: $orange;
+  //   color: $orange;
+  //   box-shadow: 0 8px 16px $white;
+  //   border-radius: 8px;
+  // }
+
+  // .nav-bar-icon-logo:active {
+  //   background: #2230d2;
+  //   border-radius: 8px;
+  // }
+
+  // .nav-bar-icon-logo:enabled {
+  //   border: 1px solid #7f8cff;
+  //   border-radius: 8px;
+  //   background: #fff;
+  //   box-sizing: border-box;
+  // }
+
+  // .nav-bar-icon-logo:disabled {
+  //   border: 1px solid #c1c7d0;
+  //   border-radius: 8px;
+  //   box-sizing: border-box;
+  // }
+
+  // English button
+
+  // My Page button
+
+  // Logout link
+  // .nav-bar-logo-div:hover {
+  //   background-color: red;
+  // }
+
+}

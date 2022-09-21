@@ -63,6 +63,7 @@ const featuredArtists = [
 
 // Create the constant header of the page
 let footer = document.createElement("footer");
+footer.className= 'whole-footer-display'
 footer.innerHTML = `
 <section class='footer'>
   <h3 class="footer-head font">Featured Artists</h3>
@@ -92,26 +93,29 @@ function showFeaturedArtistsMobile(info) {
 footer.appendChild(shownArtistMobile)
 }
 
+let shownArtistDeskContainer = document.createElement('section');
+shownArtistDeskContainer.className = 'desk-featured-artists-container for-desktop';
+// shownArtistDeskContainer.innerHTML = 
+// `<div class="desk-featured-artists-item-div for-desktop">
+// </div>`,
+footer.appendChild(shownArtistDeskContainer);
+
 // Create a function and create the element for desktop display
 function showFeaturedArtistsDesk (info) {
   let shownArtistDesk = document.createElement('section');
-  shownArtistDesk.className = 'desk-featured-artists-container for-desktop';
+  shownArtistDesk.className = 'desk-featured-artist-item-child for-desktop';
   shownArtistDesk.innerHTML = 
-    `<div class="desk-featured-artists-item-div for-desktop">
-       <div class="desk-featured-artist-item-child for-desktop">
-        <img class="background-top-desk for-desktop" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-        <img class="featured-artists-image-desk for-desktop" src='${featuredArtists[info].artistImage}' alt='${featuredArtists[info].imageAlt}'>
-        <div class="desk-featured-artists-body-div for-desktop">
-          <h4 class=" for-desktop font">${featuredArtists[info].artistName}</h4>
-          <h5 class="margin padding for-desktop font"> <i>${featuredArtists[info].artistLabel}</i></h5>
-          <div class=" for-desktop">__</div>
-          <h6 class=" for-desktop margin padding font">
-            ${featuredArtists[info].latestRelease}
-          </h6>
-        </div>
-      </div>
-    </div>`,
-    footer.appendChild(shownArtistDesk)
+`<img class="background-top-desk for-desktop" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
+<img class="featured-artists-image-desk for-desktop" src='${featuredArtists[info].artistImage}' alt='${featuredArtists[info].imageAlt}'>
+<div class="desk-featured-artists-body-div for-desktop">
+  <h4 class=" for-desktop font">${featuredArtists[info].artistName}</h4>
+  <h5 class="margin padding for-desktop font"> <i>${featuredArtists[info].artistLabel}</i></h5>
+  <div class=" for-desktop">__</div>
+  <h6 class=" for-desktop margin padding font">
+    ${featuredArtists[info].latestRelease}
+  </h6>
+</div>`,
+shownArtistDeskContainer.appendChild(shownArtistDesk)
 }
 
 // Write a condition for screen width under which the mobile and desktop elements created would be called

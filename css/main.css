@@ -875,13 +875,15 @@ button {
 
   .desk-featured-artists-container {
     padding: 0 135px 40px 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
   }
 
   .desk-featured-artists-item-div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
   }
 
   .desk-featured-artist-item-child {
@@ -914,8 +916,7 @@ button {
     height: 120px;
     width: 120px;
     margin-top: 14px;
-    margin-left: -40px;
-    margin-right: 130px;
+    margin-left: -127px;
   }
 
   .red-line-2-desk {

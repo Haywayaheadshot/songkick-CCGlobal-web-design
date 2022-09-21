@@ -1,174 +1,189 @@
 // Declaration of variables
-const body = document.querySelector('#body');
-const hamburger = document.querySelector('.hamburger');
-const hamburgerPopUpNav = document.querySelectorAll('.pop-up-ul-text');
+const body = document.querySelector("#body");
+const hamburger = document.querySelector(".hamburger");
+const hamburgerPopUpNav = document.querySelectorAll(".pop-up-ul-text");
 
 // Footer of page
+// Store Artist information in object
 
-let footer = document.createElement('footer');
-footer.innerHTML = 
-`<section class='footer for-phone'>
-<h3 class="footer-head font">Featured Artists</h3>
-<div class="red-line-2 font">_______</div>
-<section class="featured-artists-container">
-    <div class="featured-artists-item-div">
-        <img class="background-top" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-        <img class="featured-artists-image" src="images/haywaya.jpg" alt="Picture of Haywaya">
-        <div class="featured-artists-body-div">
-            <h4 class="font">Haywaya</h4>
-            <h5 class="font"> <i>Hybrid Rekords recording artist.</i></h5>
-            <div>__</div>
-            <h6 class="font">
-                Haywaya just release a new EP titled "All That I Am".
-            </h6>
-        </div>
+const featuredArtists = [
+  {
+    id: `1`,
+    artistImage: `./images/haywaya.jpg`,
+    artistName: `Haywaya`,
+    imageAlt: `Picture of Haywaya`,
+    artistLabel: `Hybrid Rekords recording artist.`,
+    latestRelease: `Haywaya just release a new EP titled "All That I Am".`,
+  },
 
-    </div>
-    <div class="featured-artists-item-div">
-        <img class="background-top" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-        <img class="featured-artists-image" src="images/drvmroll.jpg" alt="Picture of drvmroll">
-        <div class="featured-artists-body-div">
-            <h4 class="font">Drvmroll</h4>
-            <h5 class="font"> <i>Independent recording artist.</i></h5>
-            <div>__</div>
-            <h6 class="font">
-                Drvmroll is currently one of the best producers in the country. 
-                He has produced for A-list artists like Sarkodie, Manifest etc
-            </h6>
-        </div>
-    </div>
-</section>
-<button class="font">MORE<span> v </span> </button>
-</section>
-<section class="footer-desk for-desktop">
-        <h3 class="footer-head-desk for-desktop font">Featured Artists</h3>
-        <div class="red-line-2-desk for-desktop font">_______</div>
-        <section class="desk-featured-artists-container">
-            <div class="desk-featured-artists-item-div">
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/haywaya.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Haywaya</h4>
-                        <h5 class="margin padding font"> <i>Hybrid Rekords recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                          Haywaya just released a new EP titled "All That I Am".
-                      </h6>
-                    </div>
-                </div>
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/drvmroll.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Drvmroll</h4>
-                        <h5 class="margin padding font"> <i>Independent recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                        Drvmroll has produced for A-list artist like Sarkodie.
-                      </h6>
-                    </div>
+  {
+    id: `2`,
+    artistImage: `./images/drvmroll.jpg`,
+    artistName: `Drvmroll`,
+    imageAlt: `Picture of Drvmroll`,
+    artistLabel: `Independent recording artist.`,
+    latestRelease: `Drvmroll has produced for A-list artist like Sarkodie.`,
+  },
 
-                </div>
-            </div>
-            <div class="desk-featured-artists-item-div">
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/Akwesi-Orlando.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Akwesi Orland0</h4>
-                        <h5 class="margin padding font"> <i>Hybrid Rekords recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                         Akwesi Orlando just released an EP titled "Midnite".
-                      </h6>
-                    </div>
+  {
+    id: `3`,
+    artistImage: `./images/Akwesi-Orlando.jpg`,
+    artistName: `Akwesi Orlando`,
+    imageAlt: `Picture of Akwesi Orlando`,
+    artistLabel: `Hybrid Rekords recording artist.`,
+    latestRelease: `Akwesi Orlando just released an EP titled "Midnite".`,
+  },
+  
+  {
+    id: `4`,
+    artistImage: `./images/Kirani-Ayat.jpg`,
+    artistName: `Kirani Ayat`,
+    imageAlt: `Picture of Kirani Ayat`,
+    artistLabel: `Independent recording artist.`,
+    latestRelease: `Ayat just released his debut Album titled "Aishas Sun"`,
+  },
 
-                </div>
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/Kirani-Ayat.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Ayat</h4>
-                        <h5 class="margin padding font"> <i>Independent recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                          Ayat just released his debut Album titled "Aishas Sun".
-                      </h6>
-                    </div>
+  {
+    id: `5`,
+    artistImage: `./images/Burna-boy.jpg`,
+    artistName: `Burna Boy`,
+    imageAlt: `Picture of Burna Boy`,
+    artistLabel: `Atlantic Records recording artist.`,
+    latestRelease: `Burna boy is a grammy winning afrobeats/rap artist.`,
+  },
+  {
+    id: `6`,
+    artistImage: `./images/sarkodie.jpg`,
+    artistName: `Sarkodie`,
+    imageAlt: `Picture of Sarkodie`,
+    artistLabel: `Independent recording artist.`,
+    latestRelease: `BET winner and the most decorated Ghanaian rapper.`,
+  },
+];
 
-                </div>
-
-            </div>
-            <div class="desk-featured-artists-item-div">
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/Burna-boy.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Burna Boy</h4>
-                        <h5 class="margin padding font"> <i>Atlantic Records recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                          Burna boy is a grammy winning afrobeats/rap artist.
-                      </h6>
-                    </div>
-
-                </div>
-                <div class="desk-featured-artist-item-child">
-                    <img class="background-top-desk" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
-                    <img class="featured-artists-image-desk" src="images/sarkodie.jpg" alt="Picture of Haywaya">
-                    <div class="desk-featured-artists-body-div">
-                        <h4 class=" font">Haywaya</h4>
-                        <h5 class="margin padding font"> <i>Independent recording artist.</i></h5>
-                        <div>__</div>
-                       <h6 class="margin padding font">
-                          BET winner and the most decorated Ghanaian rapper.
-                      </h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section >
-            <section class="partners padding-left-right">
-                <h3 class="partner-head font">Partner</h3>
-                <div class="partner-head-red-line font">________</div>
-                <ul class="partners-logo-ul">
-                    <li>
-                        <img class="partner-logo" src="images/icons/apple-pay-logo.png" alt="Apple Pay Logo" role="presentation">
-                    </li>
-                    <li>
-                        <img class="partner-logo" src="images/icons/samsung-logo.png" alt="Samsung Logo" role="presentation">
-                    </li>
-                    <li>
-                        <img class="partner-logo" src="images/icons/sony-logo.png" alt="Sony Loge" role="presentation">
-                    </li>
-                </ul>
-            </section>
-            <div class="footer-end padding-left-right">
-                <div class="footer-end-items">
-                    <h1 class="footer-end-items-logo font">©️Songkick</h1>
-                </div>
-                <div class="footer-end-items">
-                    <h4 class="footer-end-items-rights font">2022 Rights Reserved</h4>
-                </div>
-            </div>
-        </section>
-    </section>`
+// Create the constant header of the page
+let footer = document.createElement("footer");
+footer.innerHTML = `
+<section class='footer'>
+  <h3 class="footer-head font">Featured Artists</h3>
+  <div class="red-line-2 font">_______</div>
+</section>`;
 body.appendChild(footer);
 
-// Hamburger event
-hamburger.addEventListener('click', () => {
-    document.getElementsByClassName('hamburger')[0].style.display = 'none';
-    document.getElementsByClassName('hamburger-pop-up')[0].style.display = 'block';
-})
-
-
-function closePopUp() {
-    document.getElementsByClassName('hamburger')[0].style.display = 'block';
-    document.getElementsByClassName('hamburger-pop-up')[0].style.display = 'none';
+// Create a function and create the element for mobile display
+function showFeaturedArtistsMobile(info) {
+  let shownArtistMobile = document.createElement('section')
+  shownArtistMobile.className = 'featured-artists-container';
+  shownArtistMobile.innerHTML = 
+  `<section class="featured-artists-container for-phone">
+  <div class="featured-artists-item-div for-phone">
+      <img class="background-top for-phone" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
+      <img class="featured-artists-image for-phone" src='${featuredArtists[info].artistImage}' alt="Picture of Haywaya">
+      <div class="featured-artists-body-div for-phone">
+          <h4 class="font for-phone">${featuredArtists[info].artistName}</h4>
+          <h5 class="font for-phone"> <i>${featuredArtists[info].artistLabel}</i></h5>
+          <div class=" for-phone">__</div>
+          <h6 class="font for-phone">
+              ${featuredArtists[info].latestRelease}
+          </h6>
+      </div>
+  </div>
+</section>`,
+footer.appendChild(shownArtistMobile)
 }
 
-hamburgerPopUpNav.forEach((link) => link.addEventListener('click', () => {
-    document.getElementsByClassName('hamburger')[0].style.display = 'block';
-    document.getElementsByClassName('hamburger-pop-up')[0].style.display = 'none';
-}))
+// Create a function and create the element for desktop display
+function showFeaturedArtistsDesk (info) {
+  let shownArtistDesk = document.createElement('section');
+  shownArtistDesk.className = 'desk-featured-artists-container for-desktop';
+  shownArtistDesk.innerHTML = 
+    `<div class="desk-featured-artists-item-div for-desktop">
+       <div class="desk-featured-artist-item-child for-desktop">
+        <img class="background-top-desk for-desktop" src="images/icons/Picture-top.png" alt="Picture background" role="presentation">
+        <img class="featured-artists-image-desk for-desktop" src='${featuredArtists[info].artistImage}' alt='${featuredArtists[info].imageAlt}'>
+        <div class="desk-featured-artists-body-div for-desktop">
+          <h4 class=" for-desktop font">${featuredArtists[info].artistName}</h4>
+          <h5 class="margin padding for-desktop font"> <i>${featuredArtists[info].artistLabel}</i></h5>
+          <div class=" for-desktop">__</div>
+          <h6 class=" for-desktop margin padding font">
+            ${featuredArtists[info].latestRelease}
+          </h6>
+        </div>
+      </div>
+    </div>`,
+    footer.appendChild(shownArtistDesk)
+}
+
+// Write a condition for screen width under which the mobile and desktop elements created would be called
+for(let i=0; i < featuredArtists.length; i++) {
+    if ((window.innerWidth < 760)) {
+      featuredArtists.length = 2;
+      showFeaturedArtistsMobile(i);
+    } else {
+      showFeaturedArtistsDesk (i);
+    }
+}
+
+// Anytime the screen is resized the function does get called untill page is refreshed. Write an event listener to reload page
+addEventListener('resize', () => {
+  window.location.reload();
+});
+
+// Create and append footer end elements
+let moreButton = document.createElement('div');
+moreButton.innerHTML = `<button class="font end-more-button for-phone">MORE<span> v </span> </button>`
+footer.appendChild(moreButton);
+
+let desktopFooterEnd = document.createElement('section')
+desktopFooterEnd.innerHTML = `
+<section>
+    <section class="partners padding-left-right">
+        <h3 class="partner-head font">Partner</h3>
+        <div class="partner-head-red-line font">________</div>
+        <ul class="partners-logo-ul">
+            <li>
+                 <img class="partner-logo" src="images/icons/apple-pay-logo.png" alt="Apple Pay Logo" role="presentation">
+            </li>
+            <li>
+                <img class="partner-logo" src="images/icons/samsung-logo.png" alt="Samsung Logo" role="presentation">
+            </li>
+            <li>
+                <img class="partner-logo" src="images/icons/sony-logo.png" alt="Sony Loge" role="presentation">
+            </li>
+        </ul>
+    </section>
+    <div class="footer-end padding-left-right">
+        <div class="footer-end-items">
+            <h1 class="footer-end-items-logo font">©️Songkick</h1>
+        </div>
+        <div class="footer-end-items">
+            <h4 class="footer-end-items-rights font">2022 Rights Reserved</h4>
+        </div>
+    </div> 
+</section>
+`
+footer.appendChild(desktopFooterEnd);
+
+// Footer page end
+
+
+// Hamburger event
+// Open Hamburger
+hamburger.addEventListener("click", () => {
+  document.getElementsByClassName("hamburger")[0].style.display = "none";
+  document.getElementsByClassName("hamburger-pop-up")[0].style.display = "block";
+});
+
+// Close Hamburger
+function closePopUp() {
+  document.getElementsByClassName("hamburger")[0].style.display = "block";
+  document.getElementsByClassName("hamburger-pop-up")[0].style.display = "none";
+}
+
+// Close hamburger when ul's li is clicked
+hamburgerPopUpNav.forEach((link) =>
+  link.addEventListener("click", () => {
+    document.getElementsByClassName("hamburger")[0].style.display = "block";
+    document.getElementsByClassName("hamburger-pop-up")[0].style.display = "none";
+  })
+);

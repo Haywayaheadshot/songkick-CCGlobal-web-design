@@ -61,18 +61,25 @@ button {
   -o-transition: all 0.3s ease-in-out 0.1s;
 }
 
+.concert-cover-transition {
+  -webkit-transition: all 0.3s ease-in-out 0.5s;
+  -moz-transition: all 0.3s ease-in-out 0.5s;
+  -o-transition: all 0.3s ease-in-out 0.5s;
+}
+
 // Home Page Start
 
 // Header
 
 .header {
   background-color: $dark-grey;
-  // height: auto;
+  background-image: $mobile-header-bg;
+  background-position: center;
+
   .page-header {
     width: 100%;
+
     .nav-bar {
-      // mix-blend-mode: multiply;
-      // backdrop-filter: blur(40px);
       height: inherit;
       padding: 15px 0 0 20px;
 
@@ -104,7 +111,6 @@ button {
 
     .header-text-description-container {
       background-color: $white;
-      height: 30px;
       padding: 3px;
       height: fit-content;
 
@@ -117,8 +123,6 @@ button {
         font-size: 15px;
         font-weight: $font-weight - 500;
         line-height: 12px;
-        // display: flex;
-        // justify-content: center;
       }
     }
 
@@ -140,48 +144,6 @@ button {
       }
     }
   }
-}
-
-.musical-note-1 {
-  display: inline;
-  position: relative;
-  top: 40px;
-  left: 30px;
-}
-
-.musical-note-2 {
-  display: inline;
-  // position: relative;
-  // top: -430px;
-  // left: 190px;
-}
-
-.musical-note-3 {
-  display: inline;
-  // position: relative;
-  // top: -400px;
-  // left: 280px;
-}
-
-.musical-note-4 {
-  display: flex;
-  position: relative;
-  top: -280px;
-  left: 280px;
-}
-
-.musical-note-5 {
-  display: flex;
-  position: relative;
-  top: -180px;
-  left: 280px;
-}
-
-.musical-note-6 {
-  display: flex;
-  position: relative;
-  top: -210px;
-  left: 0;
 }
 
 // Main
@@ -234,7 +196,6 @@ button {
       .song-info-div {
         height: fit-content;
         width: 50%;
-        // margin-top: 26px;
       }
 
       .song-info {
@@ -248,6 +209,7 @@ button {
   .trending-songs-button-div {
     display: flex;
     justify-content: center;
+
     .trending-songs-button {
       background-color: $orange;
       border: 0;
@@ -263,83 +225,85 @@ button {
 }
 
 // Footer
+
+.featured-artists-container {
+  display: grid;
+  gap: 2px;
+}
+
+.featured-artists-item-div {
+  display: flex;
+  padding: 20px;
+}
+
+.featured-artists-image {
+  height: 120px;
+  margin-top: 14px;
+  margin-left: -38px;
+}
+
+.featured-artists-body-div {
+  padding: 0 20px;
+
+  h4 {
+    margin: 0;
+    color: $black;
+    font-weight: $font-weight - 300;
+  }
+
+  h5 {
+    margin-top: 10px;
+    color: $orange;
+    font-weight: $font-weight - 500;
+  }
+
+  div {
+    margin-top: -30px;
+    color: $grey;
+  }
+
+  h6 {
+    color: $light-black;
+  }
+}
+
+.background-top {
+  height: 50px;
+}
+
+.footer-head {
+  display: flex;
+  justify-content: center;
+  font-weight: $font-weight - 350;
+}
+
+.red-line-2 {
+  display: flex;
+  justify-content: center;
+  color: $orange;
+  padding-bottom: 40px;
+  margin-top: -25px;
+  font-size: 10px;
+}
+
+.end-more-button {
+  background-color: $white;
+  width: 100%;
+  border: 1px solid $grey;
+  color: $black;
+  font-weight: $font-weight - 500;
+  padding: 13px 0;
+
+  span {
+    padding: 0 5px;
+    color: $orange;
+    font-weight: $font-weight - 200;
+  }
+}
+
 .footer {
   background-color: $white;
   padding: 20px 10px 50px 10px;
-  .footer-head {
-    display: flex;
-    justify-content: center;
-    font-weight: $font-weight - 350;
-  }
-
-  .red-line-2 {
-    display: flex;
-    justify-content: center;
-    color: $orange;
-    padding-bottom: 40px;
-    margin-top: -25px;
-    font-size: 10px;
-  }
-
-  .featured-artists-container {
-    display: grid;
-    gap: 2px;
-  }
-
-  .featured-artists-item-div {
-    display: flex;
-    padding: 20px;
-
-    .background-top {
-      height: 50px;
-    }
-
-    .featured-artists-image {
-      height: 120px;
-      margin-top: 14px;
-      margin-left: -38px;
-    }
-
-    .featured-artists-body-div {
-      padding: 0 20px;
-
-      h4 {
-        margin: 0;
-        color: $black;
-        font-weight: $font-weight - 300;
-      }
-
-      h5 {
-        margin-top: 10px;
-        color: $orange;
-        font-weight: $font-weight - 500;
-      }
-
-      div {
-        margin-top: -30px;
-        color: $grey;
-      }
-
-      h6 {
-        color: $light-black;
-      }
-    }
-  }
-
-  button {
-    background-color: $white;
-    width: 100%;
-    border: 1px solid $grey;
-    color: $black;
-    font-weight: $font-weight - 500;
-    padding: 13px 0;
-
-    span {
-      padding: 0 5px;
-      color: $orange;
-      font-weight: $font-weight - 200;
-    }
-  }
 }
 
 // Homepage Phone-version End
@@ -349,10 +313,14 @@ button {
 // About Phone-version Page Start
 
 .about-header {
-  background-color: $dark-grey;
   padding: 0 20px;
+  background-image: $mobile-header-bg;
+  background-position: center;
 
   .about-page-header {
+    background-image: $mobile-header-bg;
+    background-position: right;
+
     .about-nav-bar {
       padding: 20px 0 0 5px;
 
@@ -428,6 +396,7 @@ button {
       justify-content: center;
       margin-top: -25px;
       padding-bottom: 40px;
+
       .email-link {
         padding-top: 5px;
         display: flex;
@@ -443,6 +412,7 @@ button {
 
 .about-main-header {
   padding: 20px;
+
   h1 {
     text-align: center;
     font-weight: $font-weight - 400;
@@ -474,7 +444,6 @@ button {
   .last-concert-item:nth-child(2) {
     height: 300px;
     width: 100%;
-    // position: relative;
   }
 
   .last-concert-item:nth-child(1) {
@@ -563,6 +532,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding: 0 40px 40px 40px;
+
     .partner-logo {
       max-width: 80px;
       height: auto;
@@ -700,7 +670,7 @@ button {
       }
     }
 
-    button {
+    .campaign {
       margin-left: -30px;
       border: 5px solid $orange;
       background-color: $white;
@@ -754,7 +724,6 @@ button {
 
   .header-text-description-container-desk {
     background-color: $white;
-    height: 30px;
     padding: 3px;
     height: fit-content;
     margin-left: 135px;
@@ -818,88 +787,79 @@ button {
     }
   }
 
+  .desk-featured-artists-container {
+    padding: 0 135px 40px 135px;
+  }
+
+  .desk-featured-artists-item-div {
+    display: flex;
+    gap: 20px;
+  }
+
+  .desk-featured-artist-item-child {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .desk-featured-artists-body-div {
+    h6 {
+      font-weight: $font-weight - 500;
+      font-size: 12px;
+      color: $light-black;
+    }
+
+    h5 {
+      color: $orange;
+    }
+
+    div {
+      margin-bottom: 10px;
+      font-weight: $font-weight;
+      color: $grey;
+      font-size: 15px;
+    }
+  }
+
+  .background-top-desk {
+    display: inline-block;
+  }
+
+  .featured-artists-image-desk {
+    height: 120px;
+    width: 120px;
+    margin-top: 14px;
+    margin-left: -40px;
+    margin-right: 130px;
+  }
+
+  .red-line-2-desk {
+    text-align: center;
+    color: $dark-orange;
+    font-size: 20px;
+    margin-top: -40px;
+  }
+
   .footer-desk {
     padding: 20px 0;
+  }
 
-    .footer-head-desk {
-      text-align: center;
-      font-size: 25px;
-      font-weight: $font-weight - 500;
-      color: $black;
-    }
+  .footer-head-desk {
+    text-align: center;
+    font-size: 25px;
+    font-weight: $font-weight - 500;
+    color: $black;
+  }
 
-    .red-line-2-desk {
-      text-align: center;
-      color: $dark-orange;
-      font-size: 20px;
-      margin-top: -40px;
-    }
-
-    .desk-featured-artists-container {
-      padding: 40px 135px;
-      display: grid;
-      gap: 0;
-
-      .desk-featured-artists-item-div {
-        padding: 20px 0;
-        display: flex;
-        gap: 20px;
-
-        .desk-featured-artist-item-child {
-          width: 50%;
-          display: grid;
-          grid-template-columns: auto auto auto;
-
-          .desk-featured-artists-body-div {
-            margin-left: -200px;
-
-            h6 {
-              font-weight: $font-weight - 500;
-              font-size: 12px;
-            }
-
-            h5 {
-              color: $orange;
-            }
-
-            div {
-              margin-bottom: 10px;
-              font-weight: $font-weight;
-              color: $grey;
-              font-size: 15px;
-            }
-
-            h6 {
-              font-weight: $font-weight - 200;
-              color: $light-black;
-              // font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-
-    .background-top-desk {
-      display: inline-block;
-    }
-
-    .featured-artists-image-desk {
-      height: 120px;
-      width: 120px;
-      margin-top: 14px;
-      margin-left: -188px;
-      margin-right: -130px;
-    }
-
-    .padding-left-right {
-      padding: 0 400px;
-    }
+  .padding-left-right {
+    padding: 0 400px;
   }
 
   // About Page Desktop Version
 
   .about-header-text-div-desk {
     padding: 200px 300px 20px 300px;
+    background-image: $mobile-header-bg;
+    background-position: center;
   }
 
   .about-header-text-body-desk {
@@ -911,6 +871,8 @@ button {
 
   .about-header-text-description-container-desk {
     padding: 0 300px;
+    background-image: $mobile-header-bg;
+    background-position: center;
   }
 
   .about-header-text-description-desk {
@@ -975,39 +937,114 @@ button {
 
   // First nav bar
   // Facebook and Twitter Logo
-  // .bottom-header-ul-li-text:hover {
-  //   background: #6070ff;
-  //   background-color: $orange;
-  //   color: $orange;
-  //   box-shadow: 0 8px 16px $white;
-  //   border-radius: 8px;
-  // }
+  .nav-bar-icon-logo:hover {
+    background-color: $dark-blue;
+    color: $orange;
+    box-shadow: 0 8px 16px $white;
+    border-radius: 0;
+  }
 
-  // .nav-bar-icon-logo:active {
-  //   background: #2230d2;
-  //   border-radius: 8px;
-  // }
+  .nav-bar-icon-logo:active {
+    background-color: $light-blue;
+    border-radius: 50%;
+  }
 
-  // .nav-bar-icon-logo:enabled {
-  //   border: 1px solid #7f8cff;
-  //   border-radius: 8px;
-  //   background: #fff;
-  //   box-sizing: border-box;
-  // }
+  .nav-bar-icon-logo:enabled {
+    border: 5px solid $orange;
+    border-radius: 8px;
+    background-color: $grey;
+    box-sizing: border-box;
+  }
 
-  // .nav-bar-icon-logo:disabled {
-  //   border: 1px solid #c1c7d0;
-  //   border-radius: 8px;
-  //   box-sizing: border-box;
-  // }
+  .nav-bar-icon-logo:disabled {
+    border: 5px solid $dark-grey;
+    background-color: $grey;
+    box-sizing: border-box;
+  }
 
-  // English button
+  // English button, My Page button, and Logout link
+  .nav-bar-icon-logo-li:hover {
+    background-color: $white;
+    color: $light-blue;
+    box-shadow: 0 0 16px $grey;
+    border-radius: 10px;
+  }
 
-  // My Page button
+  .nav-bar-icon-logo-li:active {
+    background-color: $light-blue;
+    border: 1px dashed $orange;
+    color: $white;
+  }
 
-  // Logout link
-  // .nav-bar-logo-div:hover {
-  //   background-color: red;
-  // }
+  .nav-bar-icon-logo-li:disabled {
+    border: 1px solid $orange;
+    border-radius: 8px;
+    background-color: $grey;
+    color: $black;
+    box-sizing: border-box;
+  }
+  // Logo
+  .header-logo:hover {
+    background-color: $orange;
+    color: $white;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
 
+  .header-logo:active {
+    background-color: $orange;
+    color: $white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px $light-black;
+  }
+
+  // About Concert Join Sponsor News
+  .bottom-header-ul-li-text:hover {
+    color: $orange;
+  }
+
+  .bottom-header-ul-li-text:active {
+    background-color: $orange;
+    color: $white;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px $light-black;
+  }
+
+  // Campaign Button
+  .campaign:hover {
+    border: 5px solid $black;
+    background-color: $orange;
+    padding: 0 15px;
+    font-weight: $font-weight - 500;
+    color: $white;
+  }
+
+  .campaign:active {
+    border: 5px solid $black;
+    background-color: $orange;
+    padding: 0 15px;
+    font-weight: $font-weight - 500;
+    color: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 16px $light-black;
+  }
+
+  // Find Concert
+  .find-concert-desk:hover {
+    box-shadow: 0 0 16px $light-black;
+  }
+
+  // About concert Images
+  .concert-year-location-2:hover {
+    visibility: collapse;
+    cursor: pointer;
+  }
+
+  .concert-year-location:hover {
+    visibility: collapse;
+    cursor: pointer;
+  }
 }

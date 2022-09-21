@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music Festival Concerts Near You" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
+      rel="stylesheet" 
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Find the Best Concerts Near You</title>
+</head>
+<body id="body">
+    <header class="header" id="header">
+        <section class="page-header">
+                <nav class="nav-bar">
+                <img src="images/icons/menu.png" class="hamburger for-phone" alt="Menu Icon" role="img">
+                <section class="hamburger-pop-up">
+                    <button type="button" class="power-button" onclick="closePopUp()"> 
+                        <img class="power-button-image" src="images/icons/power-on-blue.png" alt="Close Button"> 
+                    </button>
+                    <ul class="pop-up-ul">
+                        <li>
+                            <a class="pop-up-ul-text font" href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="pop-up-ul-text font" href="#main">Concert</a>
+                        </li>
+                        <li>
+                            <a class="pop-up-ul-text font" href="#header">Join</a>
+                        </li>
+                        <li>
+                            <a class="pop-up-ul-text font" href="#">Sponsor</a>
+                        </li>
+                        <li>
+                            <a class="pop-up-ul-text font" href="#">News</a>
+                        </li>
+                       </ul>
+                </section>
+                <div class="for-desktop-nav-bar-div">
+                    <div class="long-black-nav for-desktop">
+                        <ul class="desktop-nav-ul for-desktop">
+                            <li class="for-desktop">
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> 
+                                    <img class="nav-bar-icon-logo transition" src="images/icons/facebook-logo.png" alt="Facebook Logo"> </a>
+                            </li>
+                            <li class="for-desktop ">
+                                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"> 
+                                    <img class="nav-bar-icon-logo transition" src="images/icons/twitter-logo.png" alt="Twitter Logo"> </a>
+                            </li>
+                            <li  class="for-desktop">
+                                <button type="button" class="font nav-bar-icon-logo-li transition">English</button>
+                            </li>
+                            <li class="for-desktop">
+                                <button type="button" class="font nav-bar-icon-logo-li transition">My Page</button>
+                            </li>
+                            <li class="for-desktop">
+                                <button type="button" class="font nav-bar-icon-logo-li transition">Logout</button>
+                            </li>
+                        </ul>
+                        <div class="nav-bar-logo-div">
+                           <div class="logo">
+                            <a class="header-logo transition font" href="#">©️Songkick</a>
+                           </div>
+                           <ul>
+                            <li>
+                                <a class="bottom-header-ul-li-text transition font" href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="bottom-header-ul-li-text transition font" href="#">Concert</a>
+                            </li>
+                            <li>
+                                <a class="bottom-header-ul-li-text transition font" href="#">Join</a>
+                            </li>
+                            <li>
+                                <a class="bottom-header-ul-li-text transition font" href="#">Sponsor</a>
+                            </li>
+                            <li>
+                                <a class="bottom-header-ul-li-text transition font" href="#">News</a>
+                            </li>
+                           </ul>
+                           <button type="button" class="campaign transition font">
+                            Songkick Campaign
+                           </button>
+                        </div>
+                    </div>
+
+                </div>
+                </nav>
+        </section>
+        <section class="page-header-body">
+                <h2 class="header-text-head font for-phone " >"Hello! Music lovers"</h2>
+                <h2 class="header-text-head-desk font for-desktop " >"Hello! Music lovers"</h2>
+                <h1 class="header-text-body font for-phone">
+                FIND YOUR PERFECT
+                <br>
+                CONCERT WHEREVER
+                <br>
+                YOU ARE
+                </h1>
+                <h1 class="header-text-body-desk font for-desktop">
+                FIND YOUR PERFECT
+                <br>
+                CONCERT WHEREVER
+                <br>
+                YOU ARE
+                </h1>
+                <div class="header-text-description-container for-phone">
+                    <p class="header-text-description font"> Discover the best live music, tailored 
+                        <br>
+                        <br>
+                        to your music taste.
+                    </p>
+                </div>
+                <div class="header-text-description-container-desk for-desktop">
+                    <p class="header-text-description-desk font"> Discover the best live music, tailored 
+                        <br>
+                        <br>
+                        to your music taste.
+                    </p>
+                </div>
+                <div class="for-phone">
+                    <button type="button" class="find-concert for-phone font">Find a concert 
+                        <img class="enter-arrow for-phone" src="images/icons/right-arrow.png" alt="Arrow Image" role="img">
+                    </button>
+                </div>
+                <div class="find-concert-div for-desktop">
+                    <button type="button" class="find-concert-desk transition for-desktop font">Find a concert 
+                        <img class="enter-arrow-desk for-desktop" src="images/icons/right-arrow.png" alt="Arrow Image" role="img">
+                    </button>
+                </div>    
+        </section>
+    </header>
+    <main id="main" > 
+        <section class="main for-phone">
+            <section>
+                <h3 class="main-head font">Top Trending Music</h3>
+                <div class="red-line">_____</div>
+            </section>
+            <section class="trending-songs-container ">
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 1</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Yawa Dey
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 200K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 2</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Wabaso ft Kwabena Kwabena
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 500K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 3</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Better ft Adomaa
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 250K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 4</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: I'm A Sinner
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 1.2M
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 5</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Jokoto
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 100K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <section class="trending-songs-button-div">
+    
+                    <button type="button" class="trending-songs-button font">
+                        See All Trending Music
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section class="main for-desktop">
+            <section>
+                <h3 class="main-head font">Top Trending Music</h3>
+                <div class="red-line">_____</div>
+            </section>
+            <section class="trending-songs-container ">
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 1</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Yawa Dey
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 200K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 2</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Wabaso ft Kwabena Kwabena
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 500K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 3</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Better ft Adomaa
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 250K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 4</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: I'm A Sinner
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 1.2M
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+                <div class="trending-songs-item">
+                    <img class="headphones" src="images/icons/headphones-2.png" alt="A Headphone" role="img">
+                    <h3 class="number font"># 5</h3>
+                    <div class="song-info-div">
+                        <p>
+                            <h5 class="song-info font"> Title: Jokoto
+                                <br>
+                                <br>
+                              Artist: Haywaya
+                              <br>
+                              <br>
+                              Plays: 100K
+                            </h5> 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="trending-songs-button-div-desk">
+
+                <a class="trending-songs-link font" href="#">
+                    SEE ALL TRENDING MUSIC
+                </a>
+            </section>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@
 - HTML 
 - CSS
 - Javascript
-- Sass
+- SCSS
 
 ## Live Demo
 

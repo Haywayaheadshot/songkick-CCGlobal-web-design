@@ -2,9 +2,11 @@ body {
   margin: 0;
 }
 
-.margin,
-.padding {
+.margin {
   margin: 0;
+}
+
+.padding {
   padding: 0;
 }
 
@@ -51,47 +53,68 @@ button {
   cursor: pointer;
 }
 
+.transition {
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -moz-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+}
+
+.concert-cover-transition {
+  -webkit-transition: all 0.3s ease-in-out 0.5s;
+  -moz-transition: all 0.3s ease-in-out 0.5s;
+  -o-transition: all 0.3s ease-in-out 0.5s;
+}
+
 .header {
   background-color: rgba(211, 211, 211, 0.2549019608);
+  background-image: url("../images/background-image.jpg");
+  background-position: center;
 }
+
 .header .page-header {
   width: 100%;
 }
+
 .header .page-header .nav-bar {
   height: inherit;
   padding: 15px 0 0 20px;
 }
+
 .header .page-header .nav-bar .hamburger {
   width: 50px;
 }
+
 .header .page-header-body {
   padding: 0 20px 0 20px;
   padding-bottom: 10px;
 }
+
 .header .page-header-body .header-text-head {
   font-weight: 495;
   line-height: 20px;
   color: #ec5242;
   padding-top: 30px;
 }
+
 .header .page-header-body .header-text-body {
   font-weight: 900;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
   background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   margin-top: -15px;
   font-size: 30px;
 }
+
 .header .page-header-body .header-text-description-container {
   background-color: #fff;
-  height: 30px;
   padding: 3px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 .header .page-header-body .header-text-description-container .header-text-description {
   background-color: rgba(211, 211, 211, 0.2549019608);
   margin: 0;
@@ -104,6 +127,7 @@ button {
   font-weight: 400;
   line-height: 12px;
 }
+
 .header .page-header-body .find-concert {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
   background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
@@ -121,51 +145,10 @@ button {
   border: 0;
   margin-top: 10px;
 }
+
 .header .page-header-body .find-concert .enter-arrow {
   width: 20px;
   margin-left: 10px;
-}
-
-.musical-note-1 {
-  display: inline;
-  position: relative;
-  top: 40px;
-  left: 30px;
-}
-
-.musical-note-2 {
-  display: inline;
-}
-
-.musical-note-3 {
-  display: inline;
-}
-
-.musical-note-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: -280px;
-  left: 280px;
-}
-
-.musical-note-5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: -180px;
-  left: 280px;
-}
-
-.musical-note-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: -210px;
-  left: 0;
 }
 
 .main {
@@ -173,31 +156,35 @@ button {
   background-color: #272a31;
   padding: 20px 5px 30px 5px;
 }
+
 .main .main-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #fff;
   font-weight: 400;
 }
+
 .main .red-line {
   color: #ec5242;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: -20px;
 }
+
 .main .trending-songs-container {
   padding: 20px 8px 10px 8px;
   display: grid;
   gap: 15px;
 }
+
 .main .trending-songs-container .trending-songs-item {
   padding: 10px 8px 15px 8px;
   background-color: rgba(211, 211, 211, 0.137254902);
@@ -205,11 +192,13 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+
 .main .trending-songs-container .trending-songs-item .headphones {
   padding: 20px 15px 20px 15px;
   width: 80px;
   height: auto;
 }
+
 .main .trending-songs-container .trending-songs-item .number {
   padding: 0 0 0 8px;
   color: #ec5242;
@@ -219,29 +208,33 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 20px;
 }
+
 .main .trending-songs-container .trending-songs-item .song-info-div {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 50%;
 }
+
 .main .trending-songs-container .trending-songs-item .song-info {
   color: #fff;
   font-weight: 300;
   font-size: 15px;
 }
+
 .main .trending-songs-button-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .main .trending-songs-button-div .trending-songs-button {
   background-color: #ec5242;
   border: 0;
@@ -256,70 +249,77 @@ button {
   font-size: 15px;
 }
 
-.footer {
-  background-color: #fff;
-  padding: 20px 10px 50px 10px;
-}
-.footer .footer-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 550;
-}
-.footer .red-line-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #ec5242;
-  padding-bottom: 40px;
-  margin-top: -25px;
-  font-size: 10px;
-}
-.footer .featured-artists-container {
+.featured-artists-container {
   display: grid;
   gap: 2px;
 }
-.footer .featured-artists-item-div {
+
+.featured-artists-item-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
 }
-.footer .featured-artists-item-div .background-top {
-  height: 50px;
-}
-.footer .featured-artists-item-div .featured-artists-image {
+
+.featured-artists-image {
   height: 120px;
   margin-top: 14px;
   margin-left: -38px;
 }
-.footer .featured-artists-item-div .featured-artists-body-div {
+
+.featured-artists-body-div {
   padding: 0 20px;
 }
-.footer .featured-artists-item-div .featured-artists-body-div h4 {
+
+.featured-artists-body-div h4 {
   margin: 0;
   color: #272a31;
   font-weight: 600;
 }
-.footer .featured-artists-item-div .featured-artists-body-div h5 {
+
+.featured-artists-body-div h5 {
   margin-top: 10px;
   color: #ec5242;
   font-weight: 400;
 }
-.footer .featured-artists-item-div .featured-artists-body-div div {
+
+.featured-artists-body-div div {
   margin-top: -30px;
   color: #d3d3d3;
 }
-.footer .featured-artists-item-div .featured-artists-body-div h6 {
+
+.featured-artists-body-div h6 {
   color: rgba(39, 42, 49, 0.7803921569);
 }
-.footer button {
+
+.background-top {
+  height: 50px;
+}
+
+.footer-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 550;
+}
+
+.red-line-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #ec5242;
+  padding-bottom: 40px;
+  margin-top: -25px;
+  font-size: 10px;
+}
+
+.end-more-button {
   background-color: #fff;
   width: 100%;
   border: 1px solid #d3d3d3;
@@ -327,32 +327,48 @@ button {
   font-weight: 400;
   padding: 13px 0;
 }
-.footer button span {
+
+.end-more-button span {
   padding: 0 5px;
   color: #ec5242;
   font-weight: 700;
 }
 
-.about-header {
-  background-color: rgba(211, 211, 211, 0.2549019608);
-  padding: 0 20px;
+.footer {
+  background-color: #fff;
+  padding: 20px 10px 50px 10px;
 }
+
+.about-header {
+  padding: 0 20px;
+  background-image: url("../images/background-image.jpg");
+  background-position: center;
+}
+
+.about-header .about-page-header {
+  background-image: url("../images/background-image.jpg");
+  background-position: right;
+}
+
 .about-header .about-page-header .about-nav-bar {
   padding: 20px 0 0 5px;
 }
+
 .about-header .about-page-header .about-nav-bar .about-hamburger {
   width: 50px;
 }
+
 .about-header .about-page-header-body .about-header-text-div {
   display: grid;
 }
+
 .about-header .about-page-header-body .about-header-text-div .about-header-text-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #ec5242;
   font-weight: 495px;
   font-size: 20px;
@@ -360,13 +376,14 @@ button {
   padding: 20px;
   text-align: center;
 }
+
 .about-header .about-page-header-body .about-header-text-div .about-header-text-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-weight: 900;
   color: #ec5242;
   font-size: 35px;
@@ -374,16 +391,18 @@ button {
   padding: 0 0 60px 25px;
   text-align: center;
 }
+
 .about-header .about-page-header-body .about-header-text-description-container {
   border: 1px solid #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #fff;
 }
+
 .about-header .about-page-header-body .about-header-text-description-container .about-header-text-description {
   padding: 10px 30px 10px 20px;
   color: rgba(39, 42, 49, 0.7803921569);
@@ -392,50 +411,54 @@ button {
   line-height: 12px;
   font-display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
+
 .about-header .about-page-header-body .contact-paragraph-div {
   padding: 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .about-header .about-page-header-body .contact-paragraph-div .contact-paragraph {
   padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
   line-height: 25px;
   font-weight: 550;
 }
+
 .about-header .about-page-header-body .email-link-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: -25px;
   padding-bottom: 40px;
 }
+
 .about-header .about-page-header-body .email-link-div .email-link {
   padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
   line-height: 25px;
@@ -445,11 +468,13 @@ button {
 .about-main-header {
   padding: 20px;
 }
+
 .about-main-header h1 {
   text-align: center;
   font-weight: 500;
   color: #272a31;
 }
+
 .about-main-header .about-header-red-line {
   color: #ec5242;
   text-align: center;
@@ -470,15 +495,18 @@ button {
   gap: 50px;
   padding: 30px;
 }
+
 .last-concert-container .last-concert-item:nth-child(1),
 .last-concert-container .last-concert-item:nth-child(2) {
   height: 300px;
   width: 100%;
 }
+
 .last-concert-container .last-concert-item:nth-child(1) {
   height: 300px;
   width: 100%;
 }
+
 .last-concert-container .last-concert-item:nth-child(1) .concert-year-location {
   background-color: #ec5242;
   height: 300px;
@@ -487,6 +515,7 @@ button {
   margin-bottom: -300px;
   mix-blend-mode: multiply;
 }
+
 .last-concert-container .last-concert-item:nth-child(1) .concert-images-1 {
   width: inherit;
   height: inherit;
@@ -494,10 +523,12 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+
 .last-concert-container .last-concert-item:nth-child(2) {
   height: 300px;
   width: 100%;
 }
+
 .last-concert-container .last-concert-item:nth-child(2) .concert-year-location-2 {
   background-color: #ec5242;
   height: 300px;
@@ -505,6 +536,7 @@ button {
   padding: 0;
   mix-blend-mode: multiply;
 }
+
 .last-concert-container .last-concert-item:nth-child(2) .concert-images-2 {
   width: inherit;
   height: inherit;
@@ -537,6 +569,7 @@ button {
 .partners {
   background-image: linear-gradient(250deg, #272a31, rgba(39, 42, 49, 0.7803921569));
 }
+
 .partners .partner-head {
   text-align: center;
   color: #fff;
@@ -545,21 +578,24 @@ button {
   font-size: 25px;
   line-height: 20px;
 }
+
 .partners .partner-head-red-line {
   color: #ec5242;
   text-align: center;
   margin-top: -25px;
   font-weight: 300;
 }
+
 .partners .partners-logo-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 40px 40px 40px;
 }
+
 .partners .partners-logo-ul .partner-logo {
   max-width: 80px;
   height: auto;
@@ -571,18 +607,21 @@ button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
+
 .footer-end .footer-end-items {
   width: 50%;
   padding: 40px;
 }
+
 .footer-end .footer-end-items .footer-end-items-logo {
   font-weight: 900 -200;
   line-height: 30px;
   color: #272a31;
 }
+
 .footer-end .footer-end-items .footer-end-items-rights {
   font-weight: 400;
   font-size: 15px;
@@ -599,7 +638,7 @@ button {
   display: none;
   margin-left: -20px;
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 5px;
 }
 
@@ -631,9 +670,11 @@ button {
   .for-phone {
     display: none;
   }
+
   .for-desktop {
     display: block;
   }
+
   .for-desktop-nav-bar-div {
     width: 100%;
     margin-left: -20px;
@@ -642,34 +683,40 @@ button {
     top: 2px;
     left: 20px;
   }
+
   .long-black-nav {
     height: 20px;
     background-color: #272a31;
     width: inherit;
     padding: 10px 0;
   }
+
   .desktop-nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     width: 100%;
     margin-left: -180px;
   }
+
   .desktop-nav-ul li {
     padding: 0 10px;
   }
+
   .desktop-nav-ul button {
     margin: 0;
     color: #fff;
     background-color: inherit;
     border: 0;
   }
+
   .nav-bar-icon-logo {
     height: 15px;
   }
+
   .nav-bar-logo-div {
     padding: 10px 60px;
     background-color: #fff;
@@ -678,21 +725,24 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+
   .nav-bar-logo-div ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 55%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-left: 105px;
   }
+
   .nav-bar-logo-div ul li {
     padding: 0 30px;
     margin-top: 12px;
   }
-  .nav-bar-logo-div button {
+
+  .nav-bar-logo-div .campaign {
     margin-left: -30px;
     border: 5px solid #ec5242;
     background-color: #fff;
@@ -700,26 +750,31 @@ button {
     font-weight: 400;
     color: #ec5242;
   }
+
   .logo {
     padding: 10px;
     width: 20%;
     text-align: end;
   }
+
   .bottom-header-ul-li-text {
     color: rgba(39, 42, 49, 0.7803921569);
     font-weight: 520;
     font-size: 15px;
   }
+
   .header-logo {
     font-size: 30px;
-    color: #272a31;
+    color: #ec5242;
     font-weight: 400;
     line-height: 20px;
   }
+
   .page-header-body {
     display: grid;
     margin-top: 170px;
   }
+
   .header-text-head-desk {
     padding: 0 0 0 135px;
     font-size: 40px;
@@ -728,6 +783,7 @@ button {
     font-weight: 395;
     line-height: 40px;
   }
+
   .header-text-body-desk {
     padding: 0 0 0 135px;
     font-size: 60px;
@@ -735,12 +791,12 @@ button {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
     background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     color: transparent;
   }
+
   .header-text-description-container-desk {
     background-color: #fff;
-    height: 30px;
     padding: 3px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -749,6 +805,7 @@ button {
     width: 35%;
     margin-top: -30px;
   }
+
   .header-text-description-container-desk .header-text-description-desk {
     background-color: rgba(211, 211, 211, 0.2549019608);
     margin: 0;
@@ -761,6 +818,7 @@ button {
     font-weight: 400;
     line-height: 12px;
   }
+
   .find-concert-desk {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
     background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
@@ -777,10 +835,12 @@ button {
     display: flex;
     border: 0;
   }
+
   .find-concert-desk .enter-arrow-desk {
     width: 20px;
     margin-left: 10px;
   }
+
   .main .trending-songs-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -788,104 +848,117 @@ button {
     gap: 2px;
     padding: 0 135px;
   }
+
   .main .trending-songs-container .trending-songs-item {
     margin-top: 30px;
     display: grid;
     width: 20%;
   }
+
   .main .trending-songs-button-div-desk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 20px;
     margin-top: 40px;
   }
+
   .main .trending-songs-button-div-desk .trending-songs-link {
     color: #fff;
     text-decoration: underline;
     font-weight: 350;
     font-size: 14px;
   }
-  .footer-desk {
-    padding: 20px 0;
+
+  .desk-featured-artists-container {
+    padding: 0 135px 40px 135px;
   }
-  .footer-desk .footer-head-desk {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    color: #272a31;
-  }
-  .footer-desk .red-line-2-desk {
-    text-align: center;
-    color: rgba(236, 82, 66, 0.7333333333);
-    font-size: 20px;
-    margin-top: -40px;
-  }
-  .footer-desk .desk-featured-artists-container {
-    padding: 40px 135px;
-    display: grid;
-    gap: 0;
-  }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div {
-    padding: 20px 0;
+
+  .desk-featured-artists-item-div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
   }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child {
-    width: 50%;
+
+  .desk-featured-artist-item-child {
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child .desk-featured-artists-body-div {
-    margin-left: -200px;
-  }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child .desk-featured-artists-body-div h6 {
+
+  .desk-featured-artists-body-div h6 {
     font-weight: 400;
     font-size: 12px;
+    color: rgba(39, 42, 49, 0.7803921569);
   }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child .desk-featured-artists-body-div h5 {
+
+  .desk-featured-artists-body-div h5 {
     color: #ec5242;
   }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child .desk-featured-artists-body-div div {
+
+  .desk-featured-artists-body-div div {
     margin-bottom: 10px;
     font-weight: 900;
     color: #d3d3d3;
     font-size: 15px;
   }
-  .footer-desk .desk-featured-artists-container .desk-featured-artists-item-div .desk-featured-artist-item-child .desk-featured-artists-body-div h6 {
-    font-weight: 700;
-    color: rgba(39, 42, 49, 0.7803921569);
-  }
-  .footer-desk .background-top-desk {
+
+  .background-top-desk {
     display: inline-block;
   }
-  .footer-desk .featured-artists-image-desk {
+
+  .featured-artists-image-desk {
     height: 120px;
     width: 120px;
     margin-top: 14px;
-    margin-left: -188px;
-    margin-right: -130px;
+    margin-left: -40px;
+    margin-right: 130px;
   }
-  .footer-desk .padding-left-right {
+
+  .red-line-2-desk {
+    text-align: center;
+    color: rgba(236, 82, 66, 0.7333333333);
+    font-size: 20px;
+    margin-top: -40px;
+  }
+
+  .footer-desk {
+    padding: 20px 0;
+  }
+
+  .footer-head-desk {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #272a31;
+  }
+
+  .padding-left-right {
     padding: 0 400px;
   }
+
   .about-header-text-div-desk {
     padding: 200px 300px 20px 300px;
+    background-image: url("../images/background-image.jpg");
+    background-position: center;
   }
+
   .about-header-text-body-desk {
     text-align: center;
     color: #ec5242;
     font-weight: 900;
     font-size: 40px;
   }
+
   .about-header-text-description-container-desk {
     padding: 0 300px;
+    background-image: url("../images/background-image.jpg");
+    background-position: center;
   }
+
   .about-header-text-description-desk {
     padding: 30px 60px;
     background-color: #fff;
@@ -894,27 +967,31 @@ button {
     font-weight: 400;
     font-size: 15px;
   }
+
   .contact-paragraph {
     text-align: center;
     padding-top: 20px;
     color: rgba(39, 42, 49, 0.7803921569);
     font-weight: 600;
   }
+
   .email-link-div-desk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: -15px;
     padding-bottom: 90px;
   }
+
   .email-link-div-desk a {
     text-decoration: underline;
     color: rgba(39, 42, 49, 0.7803921569);
     font-weight: 900;
   }
+
   .last-concert-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,9 +999,11 @@ button {
     gap: 10px;
     padding: 0 300px 20px 300px;
   }
+
   .partners {
     margin-top: 100px;
   }
+
   .footer-end {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -932,15 +1011,133 @@ button {
     padding: 40px 300px;
     margin-bottom: -300px;
   }
+
   .footer-end-items-logo-desk {
     color: #fff;
     font-weight: 500;
     padding-right: 40px;
   }
+
   .footer-end-items-rights-desk {
     color: #fff;
     margin-top: 25px;
     font-weight: 400;
     font-size: 12px;
+  }
+
+  .nav-bar-icon-logo:hover {
+    background-color: #2230d2;
+    color: #ec5242;
+    -webkit-box-shadow: 0 8px 16px #fff;
+    box-shadow: 0 8px 16px #fff;
+    border-radius: 0;
+  }
+
+  .nav-bar-icon-logo:active {
+    background-color: #6070ff;
+    border-radius: 50%;
+  }
+
+  .nav-bar-icon-logo:enabled {
+    border: 5px solid #ec5242;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .nav-bar-icon-logo:disabled {
+    border: 5px solid rgba(211, 211, 211, 0.2549019608);
+    background-color: #d3d3d3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .nav-bar-icon-logo-li:hover {
+    background-color: #fff;
+    color: #6070ff;
+    -webkit-box-shadow: 0 0 16px #d3d3d3;
+    box-shadow: 0 0 16px #d3d3d3;
+    border-radius: 10px;
+  }
+
+  .nav-bar-icon-logo-li:active {
+    background-color: #6070ff;
+    border: 1px dashed #ec5242;
+    color: #fff;
+  }
+
+  .nav-bar-icon-logo-li:disabled {
+    border: 1px solid #ec5242;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+    color: #272a31;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .header-logo:hover {
+    background-color: #ec5242;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .header-logo:active {
+    background-color: #ec5242;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 16px rgba(39, 42, 49, 0.7803921569);
+    box-shadow: 0 8px 16px rgba(39, 42, 49, 0.7803921569);
+  }
+
+  .bottom-header-ul-li-text:hover {
+    color: #ec5242;
+  }
+
+  .bottom-header-ul-li-text:active {
+    background-color: #ec5242;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 16px rgba(39, 42, 49, 0.7803921569);
+    box-shadow: 0 8px 16px rgba(39, 42, 49, 0.7803921569);
+  }
+
+  .campaign:hover {
+    border: 5px solid #272a31;
+    background-color: #ec5242;
+    padding: 0 15px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .campaign:active {
+    border: 5px solid #272a31;
+    background-color: #ec5242;
+    padding: 0 15px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 16px rgba(39, 42, 49, 0.7803921569);
+    box-shadow: 0 0 16px rgba(39, 42, 49, 0.7803921569);
+  }
+
+  .find-concert-desk:hover {
+    -webkit-box-shadow: 0 0 16px rgba(39, 42, 49, 0.7803921569);
+    box-shadow: 0 0 16px rgba(39, 42, 49, 0.7803921569);
+  }
+
+  .concert-year-location-2:hover {
+    visibility: collapse;
+    cursor: pointer;
+  }
+
+  .concert-year-location:hover {
+    visibility: collapse;
+    cursor: pointer;
   }
 }

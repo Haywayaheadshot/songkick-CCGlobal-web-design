@@ -59,7 +59,7 @@ Give a ⭐️ if you like this project!
 ## Acknowlegement
 - Thanks to [Cindy Shin](https://www.behance.net/adagio07) for the template
 - Thanks to [flaticon](https://www.flaticon.com/) for the icons
-- Thanks to [songkick]()
+- Thanks to [songkick](https://www.songkick.com/) for details on webpage
 - Thanks to my coding partners for their support
 - Thanks to Microverse for their curriculum
 - Thanks to morning session team for their support

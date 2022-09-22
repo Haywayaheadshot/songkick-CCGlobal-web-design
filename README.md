@@ -15,12 +15,12 @@
 
 ## Live Demo
 
-https://haywayaheadshot.github.io/
+[Click Here to see live demo](https://haywayaheadshot.github.io/)
 
 
 ## Video talking about the website
 
-https://www.loom.com/share/ad4fc43d1852448580ae3fd114013ad4
+[Click Here to watch video](https://www.loom.com/share/ad4fc43d1852448580ae3fd114013ad4)
 
 ## Getting Started
 
@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Setup
-- To clone the repository run this command git clone https://github.com/Haywayaheadshot/songkick-CCGlobal-web-design.git
+- To clone the repository run this command "git clone https://github.com/Haywayaheadshot/songkick-CCGlobal-web-design.git"
 
 
 ## Authors

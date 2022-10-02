@@ -15,8 +15,7 @@
 
 ## Live Demo
 
-[Click Here to see live demo](https://haywayaheadshot.github.io/)
-
+[Click Here to see live demo](https://haywayaheadshot.github.io/songkick-CCGlobal-web-design/)
 
 ## Video talking about the website
 

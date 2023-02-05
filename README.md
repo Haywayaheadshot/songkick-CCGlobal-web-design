@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 - To clone the repository run this command "git clone https://github.com/Haywayaheadshot/songkick-CCGlobal-web-design.git"
 - cd songkick-CCGlobal-web-design
-- right click the index.html file and open with browser 
+- open index.html file 
 
 
 ## Authors

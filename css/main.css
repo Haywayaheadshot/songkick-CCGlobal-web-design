@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-}
-
+body,
 .margin {
   margin: 0;
 }
@@ -25,18 +22,9 @@ ul {
   font-style: normal;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
+a:link,
+a:hover,
+a:active,
 a:visited {
   text-decoration: none;
 }
@@ -126,8 +114,6 @@ button {
   border-radius: 20px;
   font-weight: 400;
   margin-left: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 0;
   margin-top: 10px;
@@ -360,18 +346,12 @@ button {
 .about-header .about-page-header-body .contact-paragraph-div {
   padding: 0 70px;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .about-header .about-page-header-body .contact-paragraph-div .contact-paragraph {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
@@ -380,11 +360,7 @@ button {
 }
 
 .about-header .about-page-header-body .email-link-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: -25px;
   padding-bottom: 40px;
@@ -392,11 +368,7 @@ button {
 
 .about-header .about-page-header-body .email-link-div .email-link {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
@@ -524,11 +496,7 @@ button {
 }
 
 .partners .partners-logo-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 40px 40px 40px;
 }
@@ -539,12 +507,7 @@ button {
 }
 
 .footer-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -638,8 +601,6 @@ button {
 
   .desktop-nav-ul {
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
     margin-left: -180px;
@@ -761,14 +722,10 @@ button {
     background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
     padding: 20px;
     color: #fff;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 20px;
     font-weight: 400;
     margin: 20px 0 20px 135px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     border: 0;
   }
@@ -814,8 +771,6 @@ button {
   }
 
   .desk-featured-artists-item-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -910,11 +865,7 @@ button {
   }
 
   .email-link-div-desk {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: -15px;
     padding-bottom: 90px;
@@ -937,8 +888,6 @@ button {
   }
 
   .footer-end {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 40px 300px;
     margin-bottom: -300px;
@@ -1004,7 +953,6 @@ button {
     border-radius: 8px;
     background-color: #d3d3d3;
     color: #272a31;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -1013,7 +961,6 @@ button {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 

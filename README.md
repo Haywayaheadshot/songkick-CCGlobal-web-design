@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 - A web browser to view output
 
 
-### Setup
+### Setup and Installation
 - To clone the repository run this command "git clone https://github.com/Haywayaheadshot/songkick-CCGlobal-web-design.git"
 
 

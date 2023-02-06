@@ -1,243 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Music Festival Concerts Near You" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
-          rel="stylesheet" 
-        />
-        <link rel="stylesheet" href="css/main.css">
-        <title>About SongKick</title>
-    </head>
-    <body>
-      <header class="about-header" id="header">
-        <section class="about-page-header">
-            <nav class="about-nav-bar for-phone">
-               <img src="images/icons/menu.png" class="about-hamburger" alt="Menu Icon" role="img">
-               <section class="hamburger-pop-up">
-                <button type="button" class="power-button" onclick="AboutClosePopUp()"> 
-                    <img class="power-button-image" src="images/icons/power-on-blue.png" alt="Close Button"> 
-                </button>
-                <ul class="pop-up-ul">
-                    <li>
-                        <a class="pop-up-ul-text font" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="pop-up-ul-text font" href="#main">Concert</a>
-                    </li>
-                    <li>
-                        <a class="pop-up-ul-text font" href="#header">Join</a>
-                    </li>
-                    <li>
-                        <a class="pop-up-ul-text font" href="#">Sponsor</a>
-                    </li>
-                    <li>
-                        <a class="pop-up-ul-text font" href="#">News</a>
-                    </li>
-                   </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music Festival Concerts Near You" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About SongKick</title>
+  </head>
+  <body id="body">
+    <main>
+      <section class="about-header" id="header">
+        <div class="about-page-header">
+          <nav class="about-nav-bar for-phone">
+            <img
+              src="images/icons/menu.png"
+              class="about-hamburger"
+              alt="Menu Icon"
+              role="img"
+            />
+            <section class="hamburger-pop-up">
+              <button
+                type="button"
+                class="power-button"
+                onclick="AboutClosePopUp()"
+              >
+                <img
+                  class="power-button-image"
+                  src="images/icons/power-on-blue.png"
+                  alt="Close Button"
+                />
+              </button>
+              <ul class="pop-up-ul">
+                <li>
+                  <a class="pop-up-ul-text font" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="pop-up-ul-text font" href="#main">Concert</a>
+                </li>
+                <li>
+                  <a class="pop-up-ul-text font" href="#header">Join</a>
+                </li>
+                <li>
+                  <a class="pop-up-ul-text font" href="#">Sponsor</a>
+                </li>
+                <li>
+                  <a class="pop-up-ul-text font" href="#">News</a>
+                </li>
+              </ul>
             </section>
-            </nav>
-            <div class="for-desktop-nav-bar-div">
-                <div class="long-black-nav for-desktop">
-                    <ul class="desktop-nav-ul for-desktop">
-                        <li class="for-desktop">
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> <img class="nav-bar-icon-logo" src="images/icons/facebook-logo.png" alt="Facebook Logo"> </a>
-                        </li>
-                        <li class="for-desktop">
-                            <a href="https://wwww.twitter.com" target="_blank" rel="noopener noreferrer"> <img class="nav-bar-icon-logo" src="images/icons/twitter-logo.png" alt="Twitter Logo"> </a>
-                        </li>
-                        <li  class="for-desktop">
-                            <button type="button" class="nav-bar-icon-logo-li transition font">English</button>
-                        </li>
-                        <li class="for-desktop">
-                            <button type="button" class="nav-bar-icon-logo-li transition font">My Page</button>
-                        </li>
-                        <li class="for-desktop">
-                            <button type="button" class="nav-bar-icon-logo-li transition font">Logout</button>
-                        </li>
-                    </ul>
-                    <div class="nav-bar-logo-div">
-                       <div class="logo">
-                        <a class="header-logo transition font" href="index.html">©️Songkick</a>
-                       </div>
-                       <ul>
-                        <li>
-                            <a class="bottom-header-ul-li-text transition font" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="bottom-header-ul-li-text transition font" href="#">Concert</a>
-                        </li>
-                        <li>
-                            <a class="bottom-header-ul-li-text transition font" href="#">Join</a>
-                        </li>
-                        <li>
-                            <a class="bottom-header-ul-li-text transition font" href="#">Sponsor</a>
-                        </li>
-                        <li>
-                            <a class="bottom-header-ul-li-text transition font" href="#">News</a>
-                        </li>
-                       </ul>
-                       <button type="button" class="campaign transition font">
-                        Songkick Campaign
-                       </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="about-page-header-body for-phone">
-            <div class="about-header-text-div">
-                <h2 class="about-header-text-head font" >"Hello! Music lovers"</h2>
-                <h1 class="about-header-text-body font">FIND YOUR PERFECT CONCERT WHEREVER YOU ARE</h1>
-            </div>
-
-            <div class="about-header-text-description-container">
-                <p class="about-header-text-description font"> Discover the best live music, tailored to your music taste.
-                </p>
-            </div>
-            <div class="contact-paragraph-div">
-                <h5 class="contact-paragraph font">
-                    Please contact us per Email for any further questions
-                    about SongKick
-                </h5> 
-            </div>
-            <div class="email-link-div">
-                <a class="email-link" href="#">songkick@music.org</a>
-            </div>
-        </section>
-        <section class="about-page-header-body-desk for-desktop">
-            <div class="about-header-text-div-desk">
-                <h1 class="about-header-text-body-desk font">FIND YOUR PERFECT CONCERT WHEREVER YOU ARE</h1>
-            </div>
-
-            <div class="about-header-text-description-container-desk">
-                <p class="about-header-text-description-desk font"> 
-                    Songkick has been a trusted home for live music since 2007. 
-                    From day one, we’ve set about making it as easy, fun and fair as possible for you to see your favorite artists live. 
-                    Right now, more than 15 million music fans across the globe use Songkick to track their favorite artists, 
-                    discover concerts and buy tickets with confidence.
-                    <br>
-                    We’ve always put fans first. That means no spam about things you don’t care about, and no inflated ticket prices. 
-                    Live music should work for everyone, and we work hard to empower our community and cut out the BS along the way. 
-                    Nothing but good vibes from here.
-                    <br>
-                    Best of all, Songkick is totally free. Sign up and track bands via our website, 
-                    or download our iPhone and Android apps for concert alerts on the go. 
-                    Either way, you’ll be the first to know about the best shows in your area. 
-                    We’ll see you down the front.
-                </p>
-            </div>
-            <div class="desk-contact-paragraph-div">
-                <h5 class="contact-paragraph font">
-                    Please contact us per Email for any further questions
-                    about SongKick
-                </h5> 
-            </div>
-            <div class="email-link-div-desk">
-                <span class="font"><a class="email-link-desk" href="#">songkick@music.org</a> ></span>
-            </div>
-        </section>
-      </header>
-      <main id="main">
-        <section class="about-main-header">
-            <h1 class="font">
-                See Past Concerts
-            </h1>
-            <div class="about-header-red-line font">
-                ____
-            </div>
-        </section>
-        <p class="last-concert-header font">
-            Take a love at the last two songKick 
-            concerts which took place in Kumasi and Tamale.
-        </p>
-        <section class="last-concert-container for-phone">
-            
-                <div class="last-concert-item for-phone">
-                    <div class="concert-year-location">
-                        
-                    </div>
-                    <img class="concert-images-1" src="images/lastTwoConcert-1.jpg" alt="Kumasi Concert">
-                    <div class="contact-year-text">
-                        <h3 class="contact-year-text-head font">2022</h3>
-                        <h4 class="contact-year-text-info font">SongKick Concert 2022 Kumasi</h4>
-                    </div>
-                </div>
-
-            <div class="last-concert-item for-phone">
-                <div class="concert-year-location-2">
-                    
-                </div>
-                <img class="concert-images-2" src="images/lastConcert-2.jpg" alt="Tamale Concert">
-                <div class="contact-year-text">
-                    <h3 class="contact-year-text-head font">2022</h3>
-                    <h4 class="contact-year-text-info font">SongKick Concert 2022 Tamale</h4>
-                </div>
-            </div>
-        </section>
-        <section class="last-concert-container for-desktop">
-            
-            <div class="last-concert-item for-desktop">
-                <div class="concert-year-location concert-cover-transition">
-                    
-                </div>
-                <img class="concert-images-1" src="images/lastTwoConcert-1.jpg" alt="Kumasi Concert">
-                <div class="contact-year-text">
-                    <h3 class="contact-year-text-head font">2022</h3>
-                    <h4 class="contact-year-text-info font">SongKick Concert 2022 Kumasi</h4>
-                </div>
-            </div>
-
-        <div class="last-concert-item for-desktop">
-            <div class="concert-year-location-2 concert-cover-transition">
-                
-            </div>
-            <img class="concert-images-2" src="images/lastConcert-2.jpg" alt="Tamale Concert">
-            <div class="contact-year-text">
-                <h3 class="contact-year-text-head font">2022</h3>
-                <h4 class="contact-year-text-info font">SongKick Concert 2022 Tamale</h4>
-            </div>
+          </nav>
+          <div class="for-desktop-nav-bar-div">
+            <section class="long-black-nav for-desktop">
+              <ul class="desktop-nav-ul for-desktop">
+                <li class="for-desktop">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="nav-bar-icon-logo"
+                      src="images/icons/facebook-logo.png"
+                      alt="Facebook Logo"
+                    />
+                  </a>
+                </li>
+                <li class="for-desktop">
+                  <a
+                    href="https://wwww.twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      class="nav-bar-icon-logo"
+                      src="images/icons/twitter-logo.png"
+                      alt="Twitter Logo"
+                    />
+                  </a>
+                </li>
+                <li class="for-desktop">
+                  <button
+                    type="button"
+                    class="nav-bar-icon-logo-li transition font"
+                  >
+                    English
+                  </button>
+                </li>
+                <li class="for-desktop">
+                  <button
+                    type="button"
+                    class="nav-bar-icon-logo-li transition font"
+                  >
+                    My Page
+                  </button>
+                </li>
+                <li class="for-desktop">
+                  <button
+                    type="button"
+                    class="nav-bar-icon-logo-li transition font"
+                  >
+                    Logout
+                  </button>
+                </li>
+              </ul>
+              <div class="nav-bar-logo-div">
+                <section class="logo">
+                  <a class="header-logo transition font" href="index.html"
+                    >©️Songkick</a
+                  >
+                </section>
+                <ul>
+                  <li>
+                    <a
+                      class="bottom-header-ul-li-text transition font"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a class="bottom-header-ul-li-text transition font" href="#"
+                      >Concert</a
+                    >
+                  </li>
+                  <li>
+                    <a class="bottom-header-ul-li-text transition font" href="#"
+                      >Join</a
+                    >
+                  </li>
+                  <li>
+                    <a class="bottom-header-ul-li-text transition font" href="#"
+                      >Sponsor</a
+                    >
+                  </li>
+                  <li>
+                    <a class="bottom-header-ul-li-text transition font" href="#"
+                      >News</a
+                    >
+                  </li>
+                </ul>
+                <button type="button" class="campaign transition font">
+                  Songkick Campaign
+                </button>
+              </div>
+            </section>
+          </div>
         </div>
-    </section>
-      </main>
+        <div class="about-page-header-body for-phone">
+          <section class="about-header-text-div">
+            <h1 class="about-header-text-head font">"Hello! Music lovers"</h2>
+            <h2 class="about-header-text-body font">
+              FIND YOUR PERFECT CONCERT WHEREVER YOU ARE
+            </h2>
+          </section>
+          <section class="about-header-text-description-container">
+            <p class="about-header-text-description font">
+              Discover the best live music, tailored to your music taste.
+            </p>
+          </section>
+          <section class="contact-paragraph-div">
+            <h5 class="contact-paragraph font">
+              Please contact us per Email for any further questions about
+              SongKick
+            </h5>
+          </section>
+          <section class="email-link-div">
+            <a class="email-link" href="#">songkick@music.org</a>
+          </section>
+        </div>
+        <div class="about-page-header-body-desk for-desktop">
+          <section class="about-header-text-div-desk">
+            <h1 class="about-header-text-body-desk font">
+              FIND YOUR PERFECT CONCERT WHEREVER YOU ARE
+            </h1>
+          </section>
+          <section class="about-header-text-description-container-desk">
+            <p class="about-header-text-description-desk font">
+              Songkick has been a trusted home for live music since 2007. From
+              day one, we’ve set about making it as easy, fun and fair as
+              possible for you to see your favorite artists live. Right now,
+              more than 15 million music fans across the globe use Songkick to
+              track their favorite artists, discover concerts and buy tickets
+              with confidence.
+              <br />
+              We’ve always put fans first. That means no spam about things you
+              don’t care about, and no inflated ticket prices. Live music should
+              work for everyone, and we work hard to empower our community and
+              cut out the BS along the way. Nothing but good vibes from here.
+              <br />
+              Best of all, Songkick is totally free. Sign up and track bands via
+              our website, or download our iPhone and Android apps for concert
+              alerts on the go. Either way, you’ll be the first to know about
+              the best shows in your area. We’ll see you down the front.
+            </p>
+          </section>
+          <section class="desk-contact-paragraph-div">
+            <h5 class="contact-paragraph font">
+              Please contact us per Email for any further questions about
+              SongKick
+            </h5>
+          </section>
+          <section class="email-link-div-desk">
+            <span class="font"
+              ><a class="email-link-desk" href="#">songkick@music.org</a>
+              ></span
+            >
+          </section>
+        </div>
+      </section>
+      <section id="main">
+        <div class="about-main-header">
+          <h1 class="font">See Past Concerts</h1>
+          <section class="about-header-red-line font">____</section>
+        </div>
+        <p class="last-concert-header font">
+          Take a love at the last two songKick concerts which took place in
+          Kumasi and Tamale.
+        </p>
+        <div class="last-concert-container for-phone">
+          <section class="last-concert-item for-phone">
+            <div class="concert-year-location"></div>
+            <img
+              class="concert-images-1"
+              src="images/lastTwoConcert-1.jpg"
+              alt="Kumasi Concert"
+            />
+            <div class="contact-year-text">
+              <h3 class="contact-year-text-head font">2022</h3>
+              <h4 class="contact-year-text-info font">
+                SongKick Concert 2022 Kumasi
+              </h4>
+            </div>
+          </section>
+          <section class="last-concert-item for-phone">
+            <div class="concert-year-location-2"></div>
+            <img
+              class="concert-images-2"
+              src="images/lastConcert-2.jpg"
+              alt="Tamale Concert"
+            />
+            <div class="contact-year-text">
+              <h3 class="contact-year-text-head font">2022</h3>
+              <h4 class="contact-year-text-info font">
+                SongKick Concert 2022 Tamale
+              </h4>
+            </div>
+          </section>
+        </div>
+        <div class="last-concert-container for-desktop">
+          <section class="last-concert-item for-desktop">
+            <div
+              class="concert-year-location concert-cover-transition"
+            ></div>
+            <img
+              class="concert-images-1"
+              src="images/lastTwoConcert-1.jpg"
+              alt="Kumasi Concert"
+            />
+            <div class="contact-year-text">
+              <h3 class="contact-year-text-head font">2022</h3>
+              <h4 class="contact-year-text-info font">
+                SongKick Concert 2022 Kumasi
+              </h4>
+            </div>
+          </section>
+          <section class="last-concert-item for-desktop">
+            <div
+              class="concert-year-location-2 concert-cover-transition"
+            ></div>
+            <img
+              class="concert-images-2"
+              src="images/lastConcert-2.jpg"
+              alt="Tamale Concert"
+            />
+            <div class="contact-year-text">
+              <h3 class="contact-year-text-head font">2022</h3>
+              <h4 class="contact-year-text-info font">
+                SongKick Concert 2022 Tamale
+              </h4>
+            </div>
+          </section>
+        </div>
+      </section>
       <footer>
         <section class="partners">
-            <h3 class="partner-head for-phone font">Partner</h3>
-            <div class="partner-head-red-line for-phone font">________</div>
-            <ul class="partners-logo-ul for-phone">
-                <li>
-                    <img class="partner-logo for-phone" src="images/icons/apple-pay-logo.png" alt="Apple Pay Logo" role="presentation">
-                </li>
-                <li>
-                    <img class="partner-logo for-phone" src="images/icons/samsung-logo.png" alt="Samsung Logo" role="presentation">
-                </li>
-                <li>
-                    <img class="partner-logo for-phone" src="images/icons/sony-logo.png" alt="Sony Loge" role="presentation">
-                </li>
-            </ul>
-            <div class="footer-end for-desktop">
-                <div class="footer-end-items-desk for-desktop">
-                    <h1 class="footer-end-items-logo-desk font for-desktop">©️Songkick</h1>
-                </div>
-                <div class="footer-end-items-desk for-desktop">
-                    <h4 class="footer-end-items-rights-desk font for-desktop">2022 Rights Reserved</h4>
-                </div>
-            </div>
+          <h3 class="partner-head for-phone font">Partner</h3>
+          <div class="partner-head-red-line for-phone font">________</div>
+          <ul class="partners-logo-ul for-phone">
+            <li>
+              <img
+                class="partner-logo for-phone"
+                src="images/icons/apple-pay-logo.png"
+                alt="Apple Pay Logo"
+                role="presentation"
+              />
+            </li>
+            <li>
+              <img
+                class="partner-logo for-phone"
+                src="images/icons/samsung-logo.png"
+                alt="Samsung Logo"
+                role="presentation"
+              />
+            </li>
+            <li>
+              <img
+                class="partner-logo for-phone"
+                src="images/icons/sony-logo.png"
+                alt="Sony Loge"
+                role="presentation"
+              />
+            </li>
+          </ul>
+          <div class="footer-end for-desktop">
+            <section class="footer-end-items-desk for-desktop">
+              <h1 class="footer-end-items-logo-desk font for-desktop">
+                ©️Songkick
+              </h1>
+            </section>
+            <section class="footer-end-items-desk for-desktop">
+              <h4 class="footer-end-items-rights-desk font for-desktop">
+                2022 Rights Reserved
+              </h4>
+            </section>
+          </div>
         </section>
-        <div class="footer-end for-phone">
-            <div class="footer-end-items for-phone">
-                <h1 class="footer-end-items-logo for-phone font">©️Songkick</h1>
-            </div>
-            <div class="footer-end-items for-phone">
-                <h4 class="footer-end-items-rights for-phone font">2022 Rights Reserved</h4>
-            </div>
-        </div>
+        <section class="footer-end for-phone">
+          <div class="footer-end-items for-phone">
+            <h1 class="footer-end-items-logo for-phone font">©️Songkick</h1>
+          </div>
+          <div class="footer-end-items for-phone">
+            <h4 class="footer-end-items-rights for-phone font">
+              2022 Rights Reserved
+            </h4>
+          </div>
+        </section>
       </footer>
-      <script type="text/javascript" src="js/about.js" ></script>
-    </body>
+    </main>
+    <script type="text/javascript" src="js/about.js"></script>
+  </body>
 </html>

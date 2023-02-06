@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-}
-
+body,
 .margin {
   margin: 0;
 }
@@ -25,18 +22,9 @@ ul {
   font-style: normal;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
+a:link,
+a:hover,
+a:active,
 a:visited {
   text-decoration: none;
 }
@@ -54,15 +42,11 @@ button {
 }
 
 .transition {
-  -webkit-transition: all 0.3s ease-in-out 0.1s;
-  -moz-transition: all 0.3s ease-in-out 0.1s;
-  -o-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 .concert-cover-transition {
-  -webkit-transition: all 0.3s ease-in-out 0.5s;
-  -moz-transition: all 0.3s ease-in-out 0.5s;
-  -o-transition: all 0.3s ease-in-out 0.5s;
+  transition: all 0.3s ease-in-out 0.5s;
 }
 
 .header {
@@ -98,9 +82,7 @@ button {
 
 .header .page-header-body .header-text-body {
   font-weight: 900;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
   background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   margin-top: -15px;
@@ -110,8 +92,6 @@ button {
 .header .page-header-body .header-text-description-container {
   background-color: #fff;
   padding: 3px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -119,8 +99,6 @@ button {
   background-color: rgba(211, 211, 211, 0.2549019608);
   margin: 0;
   padding: 10px 30px 10px 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   color: rgba(39, 42, 49, 0.7803921569);
   font-size: 15px;
@@ -129,18 +107,13 @@ button {
 }
 
 .header .page-header-body .find-concert {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ec5242), to(rgba(236, 82, 66, 0.7333333333)));
   background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
   padding: 10px;
   color: #fff;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
   font-weight: 400;
   margin-left: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 0;
   margin-top: 10px;
@@ -158,11 +131,7 @@ button {
 }
 
 .main .main-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #fff;
   font-weight: 400;
@@ -170,11 +139,7 @@ button {
 
 .main .red-line {
   color: #ec5242;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: -20px;
 }
@@ -188,8 +153,6 @@ button {
 .main .trending-songs-container .trending-songs-item {
   padding: 10px 8px 15px 8px;
   background-color: rgba(211, 211, 211, 0.137254902);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -204,18 +167,12 @@ button {
   color: #ec5242;
   font-weight: 400;
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding-left: 20px;
 }
 
 .main .trending-songs-container .trending-songs-item .song-info-div {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   width: 50%;
 }
@@ -227,11 +184,7 @@ button {
 }
 
 .main .trending-songs-button-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -241,8 +194,6 @@ button {
   height: 80px;
   color: #fff;
   margin: 30px 0 0 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0 50px;
   font-weight: 500;
@@ -255,8 +206,6 @@ button {
 }
 
 .featured-artists-item-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 20px;
 }
@@ -297,21 +246,13 @@ button {
 }
 
 .footer-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 550;
 }
 
 .red-line-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #ec5242;
   padding-bottom: 40px;
@@ -363,11 +304,7 @@ button {
 }
 
 .about-header .about-page-header-body .about-header-text-div .about-header-text-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #ec5242;
   font-weight: 495px;
@@ -378,11 +315,7 @@ button {
 }
 
 .about-header .about-page-header-body .about-header-text-div .about-header-text-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 900;
   color: #ec5242;
@@ -394,11 +327,7 @@ button {
 
 .about-header .about-page-header-body .about-header-text-description-container {
   border: 1px solid #d3d3d3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: #fff;
 }
@@ -410,29 +339,19 @@ button {
   font-weight: 400;
   line-height: 12px;
   font-display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
 
 .about-header .about-page-header-body .contact-paragraph-div {
   padding: 0 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .about-header .about-page-header-body .contact-paragraph-div .contact-paragraph {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
@@ -441,11 +360,7 @@ button {
 }
 
 .about-header .about-page-header-body .email-link-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: -25px;
   padding-bottom: 40px;
@@ -453,11 +368,7 @@ button {
 
 .about-header .about-page-header-body .email-link-div .email-link {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: rgba(39, 42, 49, 0.7803921569);
   text-align: center;
@@ -519,8 +430,6 @@ button {
 .last-concert-container .last-concert-item:nth-child(1) .concert-images-1 {
   width: inherit;
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -587,11 +496,7 @@ button {
 }
 
 .partners .partners-logo-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 40px 40px 40px;
 }
@@ -602,12 +507,7 @@ button {
 }
 
 .footer-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -638,8 +538,16 @@ button {
   display: none;
   margin-left: -20px;
   -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -o-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 5px;
+
+  /* overflow: hidden; */
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .power-button {
@@ -663,7 +571,7 @@ button {
 .pop-up-ul-text {
   color: #272a31;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -692,11 +600,7 @@ button {
   }
 
   .desktop-nav-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
     margin-left: -180px;
@@ -721,18 +625,12 @@ button {
     padding: 10px 60px;
     background-color: #fff;
     margin: 5.5px 0 0 -50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
   .nav-bar-logo-div ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 55%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding-left: 105px;
   }
@@ -824,14 +722,10 @@ button {
     background-image: linear-gradient(360deg, #ec5242, rgba(236, 82, 66, 0.7333333333));
     padding: 20px;
     color: #fff;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     border-radius: 20px;
     font-weight: 400;
     margin: 20px 0 20px 135px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     border: 0;
   }
@@ -842,8 +736,6 @@ button {
   }
 
   .main .trending-songs-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 2px;
     padding: 0 135px;
@@ -856,8 +748,6 @@ button {
   }
 
   .main .trending-songs-button-div-desk {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -881,8 +771,6 @@ button {
   }
 
   .desk-featured-artists-item-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -977,11 +865,7 @@ button {
   }
 
   .email-link-div-desk {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: -15px;
     padding-bottom: 90px;
@@ -994,8 +878,6 @@ button {
   }
 
   .last-concert-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
     padding: 0 300px 20px 300px;
@@ -1006,8 +888,6 @@ button {
   }
 
   .footer-end {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 40px 300px;
     margin-bottom: -300px;
@@ -1073,7 +953,6 @@ button {
     border-radius: 8px;
     background-color: #d3d3d3;
     color: #272a31;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -1082,7 +961,6 @@ button {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 

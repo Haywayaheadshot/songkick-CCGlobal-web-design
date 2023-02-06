@@ -175,12 +175,14 @@ footer.appendChild(desktopFooterEnd);
 // Open Hamburger
 hamburger.addEventListener("click", () => {
   document.getElementsByClassName("hamburger")[0].style.display = "none";
+  body.classList.add("overflow");
   document.getElementsByClassName("hamburger-pop-up")[0].style.display = "block";
 });
 
 // Close Hamburger
 function closePopUp() {
   document.getElementsByClassName("hamburger")[0].style.display = "block";
+  body.classList.remove("overflow");
   document.getElementsByClassName("hamburger-pop-up")[0].style.display = "none";
 }
 
@@ -188,6 +190,7 @@ function closePopUp() {
 hamburgerPopUpNav.forEach((link) =>
   link.addEventListener("click", () => {
     document.getElementsByClassName("hamburger")[0].style.display = "block";
+    body.classList.remove("overflow");
     document.getElementsByClassName("hamburger-pop-up")[0].style.display = "none";
   })
 );
